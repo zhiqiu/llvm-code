@@ -1,0 +1,5 @@
+/home/chenql/code/sub2add/build/CMakeFiles/edit_cache.dir
+/home/chenql/code/sub2add/build/CMakeFiles/rebuild_cache.dir
+/home/chenql/code/sub2add/build/src/CMakeFiles/edit_cache.dir
+/home/chenql/code/sub2add/build/src/CMakeFiles/rebuild_cache.dir
+/home/chenql/code/sub2add/build/src/CMakeFiles/add2sub.dir

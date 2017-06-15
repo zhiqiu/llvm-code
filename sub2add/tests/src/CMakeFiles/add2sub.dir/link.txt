@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -std=c++11  -shared  -o ../lib/libadd2sub.so CMakeFiles/add2sub.dir/main.cpp.o  -L/usr/local/lib 
