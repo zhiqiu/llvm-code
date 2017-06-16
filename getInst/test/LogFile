@@ -1,0 +1,37 @@
+main
+	entry
+		1	  %retval = alloca i32, align 4
+		2	  %mod = alloca i32, align 4
+		3	  %a = alloca i32, align 4
+		4	  %b = alloca i32, align 4
+		5	  store i32 0, i32* %retval
+		6	  store i32 1, i32* %mod, align 4
+		7	  store i32 2, i32* %a, align 4
+		8	  store i32 3, i32* %b, align 4
+		9	  %0 = load i32* %mod, align 4
+		10	  %1 = load i32* %a, align 4
+		11	  %2 = load i32* %b, align 4
+		12	  %call = call i32 @foo(i32 %0, i32 %1, i32 %2)
+		13	  %call1 = call i32 (i8*, ...)* @printf(i8* getelementptr inbounds ([4 x i8]* @.str, i32 0, i32 0), i32 %call)
+		14	  ret i32 0
+foo
+	entry
+		1	  %retval = alloca i32, align 4
+		2	  %mod.addr = alloca i32, align 4
+		3	  %a.addr = alloca i32, align 4
+		4	  %b.addr = alloca i32, align 4
+		5	  store i32 %mod, i32* %mod.addr, align 4
+		6	  store i32 %a, i32* %a.addr, align 4
+		7	  store i32 %b, i32* %b.addr, align 4
+		8	  %0 = load i32* %mod.addr, align 4
+		9	  %cmp = icmp eq i32 %0, 1
+		10	  br i1 %cmp, label %if.then, label %if.else
+	if.then
+		1	  %1 = load i32* %a.addr, align 4
+		2	  %2 = load i32* %b.addr, align 4
+		3	  %add = add nsw i32 %1, %2
+		4	  store i32 %add, i32* %retval
+		5	  br label %return
+	return
+		1	  %6 = load i32* %retval
+		2	  ret i32 %6

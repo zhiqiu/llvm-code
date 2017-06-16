@@ -1,0 +1,5 @@
+/home/chenql/code/llvm-code/getInst/build/CMakeFiles/edit_cache.dir
+/home/chenql/code/llvm-code/getInst/build/CMakeFiles/rebuild_cache.dir
+/home/chenql/code/llvm-code/getInst/build/src/CMakeFiles/edit_cache.dir
+/home/chenql/code/llvm-code/getInst/build/src/CMakeFiles/rebuild_cache.dir
+/home/chenql/code/llvm-code/getInst/build/src/CMakeFiles/getInst.dir
