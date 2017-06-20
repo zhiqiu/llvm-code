@@ -19,7 +19,7 @@ set_target_properties(getInst PROPERTIES
 		COMPILE_FLAGS "-fno-rtti"
 		)
 #llvm-config --components 查看所有lib名字
-llvm_map_components_to_libraries(LIBS  asmparser armasmparser bitwriter bitreader codegen core debuginfo engine executionengine instrumentation interpreter irreader jit linker mcjit native nativecodegen object option support tablegen target)
+llvm_map_components_to_libraries(LIBS bitreader bitwriter interpreter core irreader jit  mcjit native support)
 
 message(STATUS "lib = ${LLVM_LIBRARY_DIRS}")
 target_link_libraries(getInst ${LIBS})
