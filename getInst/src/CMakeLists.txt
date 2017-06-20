@@ -3,6 +3,7 @@ add_executable(getInst
 # List your source files here.
 		main.cpp
 		RecordInst.cpp
+#		MyRecord.cpp
 		)
 #SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/a)
 

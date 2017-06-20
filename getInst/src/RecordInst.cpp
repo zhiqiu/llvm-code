@@ -7,51 +7,92 @@ static Function *func_rec;
 Function* RecordInfo(Module *mod)
 {
 	//Initialize paramater's type
-	IntegerType *IntTy32 = IntegerType::get(mod->getContext(), 32);
+	Type *PtrTy = Type::getInt8PtrTy(mod->getContext());
+	IntegerType *IntTy = IntegerType::get(mod->getContext(), 32);
 	std::vector<Type*>FuncTy_args;
-	FuncTy_args.push_back(IntTy32);
-	FuncTy_args.push_back(IntTy32);
+	FuncTy_args.push_back(PtrTy);
+	FuncTy_args.push_back(PtrTy);
+	FuncTy_args.push_back(IntTy);
+	FuncTy_args.push_back(PtrTy);
 	FunctionType* FuncTy = FunctionType::get(/*Result=*/Type::getVoidTy(mod->getContext()),
-  											 /*Params=*/FuncTy_args,
-											 /*isVarArg=*/false);
+			/*Params=*/FuncTy_args,
+			/*isVarArg=*/false);
 
 	//Create a function declaration
 	Function* func = mod->getFunction("MyRecord");
 	if (func == NULL) 
 	{
- 		func = Function::Create(/*Type=*/FuncTy,
-									/*Linkage=*/GlobalValue::ExternalLinkage,
-									/*Name=*/"MyRecord", mod);
+		func = Function::Create(/*Type=*/FuncTy,
+				/*Linkage=*/GlobalValue::ExternalLinkage,
+				/*Name=*/"MyRecord", mod);
 		func->setCallingConv(CallingConv::C);
 	}
-//	AttrListPtr func_Add_PAL;
-//	func->setAttributes(func_Add_PAL);
-
+	//AttributeSet int32_call_PAL;
+	//func->setAttributes(int32_call_PAL);
 	return func;
+}
+//Create words to paramater
+Constant *CreateWords(Module *mod, string str)
+{
+	//look up the word in global value table
+	string mystr = "%%" + str;
+	GlobalValue *my_name = mod->getNamedValue(mystr);
+	if (my_name)
+	{
+		GlobalVariable *my_global = cast <GlobalVariable> (my_name);
+		ConstantInt* const_int = ConstantInt::get(mod->getContext(), APInt(32, 0));
+		std::vector<Constant*> const_ptr_indices;
+		const_ptr_indices.push_back(const_int);
+		const_ptr_indices.push_back(const_int);
+		Constant* const_ptr = ConstantExpr::getGetElementPtr(my_global, const_ptr_indices);
+		return const_ptr;
+	}
+
+	//if not find it, then create a new word in global value table
+	ArrayType *ArrayTy = ArrayType::get(IntegerType::get(mod->getContext(), 8), str.length()+1);
+	GlobalVariable *global_name = new GlobalVariable(*mod, ArrayTy, true, 
+			GlobalValue::PrivateLinkage, 0, mystr);
+	global_name->setAlignment(1);
+
+	//Constant Definitions 
+	Constant* const_array = ConstantDataArray::getString(mod->getContext(), str, true);
+	ConstantInt* const_int = ConstantInt::get(mod->getContext(), APInt(32, 0));
+	std::vector<Constant*> const_ptr_indices;
+	const_ptr_indices.push_back(const_int);
+	const_ptr_indices.push_back(const_int);
+	Constant* const_ptr = ConstantExpr::getGetElementPtr(global_name, const_ptr_indices);
+
+	//Global Variable Definitions
+	global_name->setInitializer(const_array);
+	return const_ptr;
 }
 
 //Insert record function
-void CreateRecord(BasicBlock *MyBB, int FnNum, int BBNum, Module *mod)
+void CreateRecord(Instruction *MyInst, string FnName, string BBName, int InstNum, string Inst, Module *mod)
 {
 
-	Value *FnNum_val = ConstantInt::get(mod->getContext(), APInt(32, FnNum));
-	Value *InstNum_val = ConstantInt::get(mod->getContext(), APInt(32, BBNum));
-
+	Value *InstNum_val = ConstantInt::get(mod->getContext(), APInt(32, InstNum));
+	Constant *FnName_str = CreateWords(mod, FnName);
+	Constant *BBName_str = CreateWords(mod, BBName);
+	Constant *Inst_str = CreateWords(mod, Inst);
 	//get the first instruction in basic block
+	BasicBlock* MyBB = MyInst->getParent();
 	BasicBlock::iterator it_BB = MyBB->begin();	
-	Instruction *MyIn = &(*it_BB);
-	if (MyIn->getOpcode() == Instruction::PHI)
-		MyIn = &(*(++ it_BB));
+	Instruction *FirstIn = &(*it_BB);
+	if (MyInst->getOpcode() == Instruction::PHI && MyInst == FirstIn)
+		MyInst = &(*(++ it_BB));
 
 	//prepare all value
 	std::vector<Value*> para;
-	para.push_back(FnNum_val);
+	para.push_back(FnName_str);
+	para.push_back(BBName_str);
 	para.push_back(InstNum_val);
+	para.push_back(Inst_str);
 
 	//put MyRecord at the first place of the basic block
 	//If the first instruction is PHI, it will be placed at the second
 	CallInst *mycall;
-	mycall = CallInst::Create(func_rec, para, "", MyIn);
+	mycall = CallInst::Create(func_rec, para, "", MyInst);
 	mycall->setCallingConv(CallingConv::C);
 	mycall->setTailCall(false);
 }
@@ -59,7 +100,7 @@ void CreateRecord(BasicBlock *MyBB, int FnNum, int BBNum, Module *mod)
 //Handle function information
 void LogFunction(Module *mod)
 {
-	int FnNum, BBNum;
+	int FnNum, BBNum, InstNum;
 
 	//Declare external functions
 	func_rec = RecordInfo(mod);
@@ -73,7 +114,15 @@ void LogFunction(Module *mod)
 		for (Function::iterator it_Fn = MyFn->begin(); it_Fn != MyFn->end(); it_Fn++)
 		{
 			BasicBlock *MyBB = &(*it_Fn);
-			CreateRecord(MyBB, FnNum, BBNum, mod);
+			InstNum = 0;
+			for (BasicBlock::iterator it_BB = MyBB->begin(); it_BB != MyBB->end(); it_BB++){
+				Instruction *MyInst = &(*it_BB);
+				string str;	
+				raw_string_ostream stream(str);
+				stream << *MyInst;
+				CreateRecord(MyInst, MyFn->getName().str(), MyBB->getName().str(), InstNum, stream.str(), mod);
+				InstNum ++;
+			}
 			BBNum ++;
 		}
 		FnNum ++;
@@ -99,50 +148,6 @@ void PrintInfo(int option, Module* mod)
 		return;
 	}
 
-	while (fscanf(fp_read, "%d%d", &FnNum, &BBNum) != EOF)
-	{
-		Module::iterator it_MM = mod->begin();
-		i = 0;
-		while (i != FnNum)
-		{
-			it_MM ++;
-			i ++;
-		}
-		Function *MyFn = &(*it_MM);
-		
-		Function::iterator it_Fn = MyFn->begin();
-		i = 0;
-		while (i != BBNum)
-		{
-			it_Fn ++;
-			i ++;
-		}
-		BasicBlock *MyBB = &(*it_Fn);
-		
-		if (tmp != FnNum)
-		{
-			tmp = FnNum;
-			fprintf(fp_write, "%s\n", (MyFn->getName()).str().c_str()); 
-		}
-
-		fprintf(fp_write, "\t%s\n", (MyBB->getName()).str().c_str());
-
-		if (option == 1)
-		{
-			BasicBlock::iterator it_BB;
-			for (it_BB = MyBB->begin(), InstID = 0; it_BB != MyBB->end(); it_BB++)
-			{
-				string str;
-				
-				raw_string_ostream stream(str);
-				Instruction *MyIn = &(*it_BB);
-				stream << InstID++ << "\t" << *MyIn ;
-				if (stream.str().find("MyRecord") != string::npos)
-					continue;
-				fprintf(fp_write, "\t\t%s\n", stream.str().c_str());
-			}
-		}
-	}
 
 	fclose(fp_read);
 	fclose(fp_write);

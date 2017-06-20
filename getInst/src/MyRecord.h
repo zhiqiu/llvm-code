@@ -1,15 +1,15 @@
-#include <cstdio>
+#include <stdio.h>
 #define MY_FILE "/tmp/LogFile"
-#define MAX_INT 800000
+#define MAX_INT 900000
 
 //open record file
 FILE *OpenRecFile(char *filename);
 
 //write to record file
-static void WriteRecFile(struct file *fp, int *buffer, int num);
+void WriteRecFile(FILE *fp, int *buffer, int num);
 
 //close record file
-static void CloseRecFile(struct file *fp);
+void CloseRecFile(FILE *fp);
 
 //record the information
-static void MyRecord(int FnNum, int InstNum);
+void MyRecord(char* FnName, char* BBName, int InstNum, char* Inst);

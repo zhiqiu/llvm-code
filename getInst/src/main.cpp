@@ -1,5 +1,5 @@
 #include "RecordInst.h"
-
+#include "MyRecord.h"
 static ExecutionEngine *EE = 0;
 
 int main(int argc, char **argv) 
