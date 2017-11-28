@@ -1,0 +1,6 @@
+/home/chenql/code/llvm-code/line2info/build/CMakeFiles/edit_cache.dir
+/home/chenql/code/llvm-code/line2info/build/CMakeFiles/rebuild_cache.dir
+/home/chenql/code/llvm-code/line2info/build/src/CMakeFiles/edit_cache.dir
+/home/chenql/code/llvm-code/line2info/build/src/CMakeFiles/rebuild_cache.dir
+/home/chenql/code/llvm-code/line2info/build/src/CMakeFiles/line2info.dir
+/home/chenql/code/llvm-code/line2info/build/src/CMakeFiles/lineToInfo.dir

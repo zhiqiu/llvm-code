@@ -1,0 +1,2 @@
+/usr/bin/ar qc libline2info.a  CMakeFiles/line2info.dir/instructionToLineMap.cpp.o
+/usr/bin/ranlib libline2info.a
