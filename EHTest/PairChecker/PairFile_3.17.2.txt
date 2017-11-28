@@ -1,0 +1,43 @@
+__skb_alloc_page __free_pages 8168 8168 2 -1 0 0 1
+dma_map_page dma_unmap_page 8160 8160 1 2 1
+netdev_alloc_skb_ip_align consume_skb 2304 2307 1 -1 0
+kcalloc kfree 1612 1620 1 -1 0
+__kmalloc_node kfree 513 513 1 -1 0
+netdev_alloc_skb_ip_align dev_kfree_skb_irq 509 509 1 -1 0
+__netdev_alloc_skb kfree_skb 504 536 1 -1 0
+sky2_rx_map_skb sky2_rx_unmap_skb 504 504 1 0 0
+kzalloc kfree 173 173 1 -1 0
+netif_napi_add netif_napi_del 148 148 1 1 0
+alloc_etherdev_mqs free_netdev 147 147 1 -1 0
+dma_alloc_attrs dma_free_attrs 135 135 2 -1 2 0 0
+vzalloc vfree 119 119 1 -1 0
+request_irq free_irq 114 114 1 0 0
+pci_enable_device pci_disable_device 112 115 1 0 0
+register_netdev unregister_netdev 99 99 1 0 0
+pci_iomap pci_iounmap 91 91 2 -1 1 0 0
+pci_request_regions pci_release_regions 81 81 1 0 0
+__netdev_alloc_skb consume_skb 65 97 1 -1 0
+pci_enable_device_mem pci_disable_device 65 65 1 0 0
+netdev_alloc_skb consume_skb 64 64 1 -1 0
+pci_request_selected_regions pci_release_selected_regions 63 63 1 0 0
+napi_enable napi_disable 57 57 1 0 0
+pci_alloc_consistent pci_free_consistent 39 39 2 -1 2 0 0
+pci_enable_pcie_error_reporting pci_disable_pcie_error_reporting 38 38 1 0 0
+igb_enable_sriov igb_disable_sriov 30 30 1 0 0
+pci_enable_msi_exact pci_disable_msi 30 30 1 0 0
+ioremap iounmap 21 21 1 -1 0
+pci_request_selected_regions_exclusive pci_release_selected_regions 16 16 1 0 0
+igb_irq_enable igb_irq_disable 14 14 1 0 0
+netif_tx_start_all_queues netif_tx_stop_all_queues 14 14 1 0 0
+pci_ioremap_bar iounmap 14 14 1 -1 0
+dma_pool_create dma_pool_destroy 14 14 1 -1 0
+netif_start_queue netif_stop_queue 13 13 1 0 0
+ioremap_nocache iounmap 12 12 1 -1 0
+e1000_irq_enable e1000_irq_disable 8 8 1 0 0
+dma_pool_alloc dma_pool_free 7 7 2 -1 1 0 0
+pci_zalloc_consistent pci_free_consistent 7 7 2 -1 2 0 0
+pm_qos_add_request pm_qos_remove_request 5 5 1 0 0
+alloc_ei_netdev free_netdev 3 3 1 -1 0
+sky2_rx_start sky2_rx_stop 2 2 1 0 0
+dma_alloc_attrs pci_free_consistent 2 2 2 -1 2 1 1
+e1000_power_up_phy e1000_power_down_phy 2 2 1 0 0

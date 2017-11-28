@@ -1,0 +1,16 @@
+is_valid_ether_addr
+netif_carrier_ok
+napi_schedule_prep
+netif_running
+list_empty
+variable_test_bit
+test_and_set_bit
+test_and_clear_bit
+rt2800_regbusy_read
+rt2x00queue_empty
+__kfifo_uint_must_check_helper
+memcpy
+atomic_read
+b43_new_kidx_api
+b43_current_band
+skb_queue_len

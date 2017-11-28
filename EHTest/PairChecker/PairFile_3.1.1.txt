@@ -1,0 +1,37 @@
+netdev_alloc_skb_ip_align consume_skb 2304 2305 1 -1 0
+kcalloc kfree 1613 1613 1 -1 0
+netdev_alloc_skb_ip_align dev_kfree_skb_irq 511 511 1 -1 0
+sky2_rx_map_skb sky2_rx_unmap_skb 336 336 1 0 0
+__netdev_alloc_skb kfree_skb 336 369 1 -1 0
+kzalloc kfree 265 265 1 -1 0
+pci_enable_device pci_disable_device 98 105 1 0 0
+dma_alloc_coherent dma_free_coherent 96 96 2 -1 2 0 0
+request_irq free_irq 95 95 1 0 0
+register_netdev unregister_netdev 91 91 1 0 0
+vzalloc vfree 90 90 1 -1 0
+pci_request_regions pci_release_regions 66 66 1 0 0
+netdev_alloc_skb consume_skb 64 64 1 -1 0
+pci_enable_device_mem pci_disable_device 61 61 1 0 0
+pci_request_selected_regions pci_release_selected_regions 57 57 1 0 0
+ioremap iounmap 56 56 1 -1 0
+napi_enable napi_disable 54 60 1 0 0
+pci_alloc_consistent pci_free_consistent 45 45 2 -1 2 0 0
+pci_iomap pci_iounmap 44 44 2 -1 1 0 0
+pci_enable_pcie_error_reporting pci_disable_pcie_error_reporting 34 34 1 0 0
+__netdev_alloc_skb consume_skb 33 66 1 -1 0
+pci_enable_msix pci_disable_msix 30 30 1 0 0
+pci_enable_msi_block pci_disable_msi 28 28 1 0 0
+pci_request_selected_regions_exclusive pci_release_selected_regions 18 18 1 0 0
+dma_pool_create dma_pool_destroy 14 14 1 -1 0
+pci_ioremap_bar iounmap 14 14 1 -1 0
+igb_irq_enable igb_irq_disable 14 14 1 0 0
+netif_tx_start_all_queues netif_tx_stop_all_queues 14 14 1 0 0
+ioremap_nocache iounmap 12 12 1 -1 0
+netif_start_queue netif_stop_queue 11 11 1 0 0
+e1000_irq_enable e1000_irq_disable 7 7 1 0 0
+dma_pool_alloc dma_pool_free 7 7 2 -1 1 0 0
+e1000e_power_up_phy e1000_power_down_phy 5 5 1 0 0
+alloc_ei_netdev free_netdev 3 3 1 -1 0
+dma_alloc_coherent pci_free_consistent 2 2 2 -1 2 1 1
+e1000_power_up_phy e1000_power_down_phy 2 2 1 0 0
+netif_napi_add netif_napi_del 5 5 1 1 0

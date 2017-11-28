@@ -1,0 +1,155 @@
+## Fault-injected function ##
+usb_disabled in ehci_pci_init
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+dma_pool_create in ehci_mem_init
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+kzalloc in ehci_qh_alloc
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+dma_pool_alloc in ehci_qh_alloc
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+dma_pool_alloc in ehci_qtd_alloc
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+ehci_qtd_alloc in ehci_qh_alloc
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+ehci_qh_alloc in ehci_mem_init
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+dma_alloc_attrs in ehci_mem_init
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+kcalloc in ehci_mem_init
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+ehci_mem_init in ehci_init
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+ehci_init in ehci_setup
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+ehci_halt in ehci_setup
+## Unhandled requiring functions: ##
+dma_pool_create
+dma_pool_create
+kzalloc
+dma_pool_alloc
+dma_pool_alloc
+dma_pool_create
+dma_pool_create
+dma_alloc_attrs
+kcalloc
+
+
+
+## Fault-injected function ##
+ehci_handshake in ehci_hub_control
+## Unhandled requiring functions: ##
+pci_set_mwi
+
+
+
+## Fault-injected function ##
+ehci_qtd_alloc in qh_urb_transaction
+## Unhandled requiring functions: ##
+pci_set_mwi
+
+
+
+## Fault-injected function ##
+qh_urb_transaction in ehci_urb_enqueue
+## Unhandled requiring functions: ##
+pci_set_mwi
+
+
+
+## Fault-injected function ##
+usb_hcd_link_urb_to_ep in submit_async
+## Unhandled requiring functions: ##
+pci_set_mwi
+
+
+
+## Fault-injected function ##
+ehci_qh_alloc in qh_make
+## Unhandled requiring functions: ##
+pci_set_mwi
+
+
+
+## Fault-injected function ##
+qh_append_tds in submit_async
+## Unhandled requiring functions: ##
+pci_set_mwi
+
+
+
+## Fault-injected function ##
+usb_hcd_check_unlink_urb in ehci_urb_dequeue
+## Unhandled requiring functions: ##
+pci_set_mwi
+
+
+
+## Fault-injected function ##
+ehci_setup in ehci_pci_setup
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+pci_set_mwi in ehci_pci_reinit
+## Unhandled requiring functions: ##
+None
+
+
+

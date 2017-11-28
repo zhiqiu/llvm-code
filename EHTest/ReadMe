@@ -1,0 +1,70 @@
+Author:
+	Jia-Ju Bai, Operating System Lab in Tsinghua University, 2016
+
+Directory structure:
+	kernel4.4:
+		Source code for 3 drivers in Linux-4.4.
+	
+	Monitor:
+		Source code for monitor (MyMonitor.ko).
+
+	NoRepeat:
+		Source code for filtering repeated functions in logfile.
+
+	PairChecker:
+		Configuration file for checking resource usages (paired functions).
+		The user can modify it as needed.
+		Each line contains two functions of a pair.
+		Each line's format:
+			Req_Name Rel_Name Req_Pos Rel_Pos
+		Details:
+		Req_Name -- Requiring function name.
+		Rel_Name -- Releasing function name.
+		Req_Pos -- Paired data's position in the requiring function.
+		Rel_Pos -- Paired data's position in the releasing function.
+		For Req_Pos and Rel_Pos, -1 means return value, >=0 means parameter.
+		Each pair only support one paired data.
+
+Injected fault:
+		Integer --> Negative
+		Pointer --> NULL
+
+Special files:
+	func.txt in each driver code:
+		It contains selected target functions and their callers.
+		Adding "*" can make the function unavailable for injection.
+		"****" --> false target functions
+		"**" --> target functions which can cause system crashes or hands
+	current.txt in each driver code:
+		It contains the current target function in the driver.
+	PairBugFile in each driver code:
+		It contains paired-function-related bugs in the driver.
+	func_test.txt and PairBugFile in each driver code:
+		They are generated files in our test.
+
+Simple Usage (kernel4.4/r8169 as an example):
+	0. Remove the driver and compile the monitor.
+		#sudo rmmod r8169
+		#cd Monitor && make && cd ..
+	1. Run fault injection testing.
+	   inject faults --> install the driver --> run the workload --> remove the driver
+		#./FaultTest.sh r8169
+	2. The file current.txt records the current target function in the driver.
+	   If a crash occur, it very probably means a null-pointer dereference occur.
+	   PairBugFile records the resource-related (paired-function) violations. 
+
+Complete Usage (kernel4.4/r8169 as an example):
+	0. Remove the driver and compile the monitor.
+		#sudo rmmod r8169
+		#cd Monitor && make && cd ..
+	1. Change into the directory of the target driver.
+		#cd kernel4.4/r8169
+	2. Get the target functions.
+		#./GetInjectFunc.sh r8169
+	3. Check func.txt to modify target functions as needed.
+	4. Run fault injection testing.
+	   inject faults --> install the driver --> run the workload --> remove the driver
+		#./FaultTest.sh r8169
+	5. The file current.txt records the current target function in the driver.
+	   If a crash occur, it very probably means a null-pointer dereference occur.
+	   PairBugFile records the resource-related (paired-function) violations.

@@ -1,0 +1,6 @@
+0x00000000	pn548_gpio_to_irq	/home/chenql/code/EHTestDir/EHTest_Release_1.1/android-3.10/nfc/pn548_hwadapter	EXPORT_SYMBOL_GPL
+0x00000000	pn548_get_hw_revision	/home/chenql/code/EHTestDir/EHTest_Release_1.1/android-3.10/nfc/pn548_hwadapter	EXPORT_SYMBOL_GPL
+0x00000000	pn548_gpio_enable	/home/chenql/code/EHTestDir/EHTest_Release_1.1/android-3.10/nfc/pn548_hwadapter	EXPORT_SYMBOL_GPL
+0x00000000	pn548_get_irq_pin	/home/chenql/code/EHTestDir/EHTest_Release_1.1/android-3.10/nfc/pn548_hwadapter	EXPORT_SYMBOL_GPL
+0x00000000	pn548_parse_dt	/home/chenql/code/EHTestDir/EHTest_Release_1.1/android-3.10/nfc/pn548_hwadapter	EXPORT_SYMBOL_GPL
+0x00000000	pn548_shutdown_cb	/home/chenql/code/EHTestDir/EHTest_Release_1.1/android-3.10/nfc/pn548_hwadapter	EXPORT_SYMBOL_GPL

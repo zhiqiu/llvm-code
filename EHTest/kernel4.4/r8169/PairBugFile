@@ -1,0 +1,84 @@
+## Fault-injected function ##
+alloc_etherdev_mqs in rtl_init_one
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+pci_enable_device in rtl_init_one
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+pci_set_mwi in rtl_init_one
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+pci_request_regions in rtl_init_one
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+dma_supported in rtl_init_one
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+ioremap_nocache in rtl_init_one
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+register_netdev in rtl_init_one
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+__kmalloc_node in rtl_open
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+request_firmware in rtl_open
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+request_threaded_irq in rtl_open
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+net_ratelimit in __rtl8169_check_link_status
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+__napi_alloc_skb in rtl8169_poll
+## Unhandled requiring functions: ##
+None
+
+
+

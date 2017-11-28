@@ -1,0 +1,4 @@
+Remove "inline" from the defination of function "ehci_qtd_free".
+Because EH-Test does not handle "inline" function.
+
+### Remove ehci_hcd and uhci_hcd driver before the testing. ###

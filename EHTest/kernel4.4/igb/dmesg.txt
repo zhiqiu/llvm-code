@@ -1,0 +1,6 @@
+kcalloc igb_sw_init
+kcalloc igb_sw_init
+kcalloc igb_sw_init
+kcalloc igb_sw_init
+kcalloc igb_sw_init
+kcalloc igb_sw_init

@@ -1,0 +1,1 @@
+cmd_/home/chenql/code/EHTest/Monitor/MyMonitor.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/chenql/code/EHTest/Monitor/MyMonitor.ko /home/chenql/code/EHTest/Monitor/MyMonitor.o /home/chenql/code/EHTest/Monitor/MyMonitor.mod.o

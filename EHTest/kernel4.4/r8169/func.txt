@@ -1,0 +1,12 @@
+alloc_etherdev_mqs   rtl_init_one
+pci_enable_device   rtl_init_one
+pci_set_mwi   rtl_init_one
+pci_request_regions   rtl_init_one
+dma_supported   rtl_init_one
+ioremap_nocache   rtl_init_one
+register_netdev   rtl_init_one
+__kmalloc_node   rtl_open
+request_firmware   rtl_open
+request_threaded_irq   rtl_open
+net_ratelimit   __rtl8169_check_link_status
+__napi_alloc_skb   rtl8169_poll

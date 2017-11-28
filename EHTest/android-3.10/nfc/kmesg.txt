@@ -1,0 +1,801 @@
+ition information.
+[    5.517733] read descriptors
+[    5.517839] read descriptors
+[    5.517851] read strings
+[    5.542317] init: Service 'exec 4 (/system/bin/vdc)' (pid 459) exited with status 0
+[    5.553679] dwc3 f9200000.dwc3: request ffffffc06c6bb900 was not queued to ep0out
+[    5.554169] dwc3 f9200000.dwc3: request ffffffc06c6bb900 was not queued to ep0out
+[    5.669493] mdss_fb_blank_sub: mdss_fb_open+0x224/0x30c mode:0
+[    5.669844] mdss_fb_blank_sub: mdss_fb_blank+0x130/0x144 mode:0
+[    5.669859] input input0: Already in awake state
+[    5.670767] msm-dai-q6-dev qcom,msm-dai-q6-sb-2-rx.188: ASoC: no source widget found for SLIMBUS_2_RX
+[    5.670785] msm-dai-q6-dev qcom,msm-dai-q6-sb-2-rx.188: ASoC: Failed to add route SLIMBUS_2_RX -> direct -> Slimbus2 Playback
+[    5.670814] msm-dai-q6-dev qcom,msm-dai-q6-sb-2-tx.189: ASoC: no sink widget found for SLIMBUS_2_TX
+[    5.670822] msm-dai-q6-dev qcom,msm-dai-q6-sb-2-tx.189: ASoC: Failed to add route Slimbus2 Capture -> direct -> SLIMBUS_2_TX
+[    5.673390] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> MultiMedia1 mapping ok
+[    5.674115] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> MultiMedia2 mapping ok
+[    5.674457] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> CS-VOICE mapping ok
+[    5.674770] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> VoIP mapping ok
+[    5.675189] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> MultiMedia3 mapping ok
+[    5.675458] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> SLIMBUS0_HOSTLESS mapping ok
+[    5.675716] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> PRI_MI2S_TX_HOSTLESS mapping ok
+[    5.676044] msm8994-asoc-snd fe034000.sound:  msm-stub-rx <-> com,msm-dai-q6-afe-proxy-rx.201 mapping ok
+[    5.676308] msm8994-asoc-snd fe034000.sound:  msm-stub-tx <-> qcom,msm-dai-q6-afe-proxy-tx.20 mapping ok
+[    5.677182] compress asoc: snd-soc-dummy-dai <-> MultiMedia4 mapping ok
+[    5.677496] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> AUXPCM_HOSTLESS mapping ok
+[    5.677762] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> SLIMBUS1_HOSTLESS mapping ok
+[    5.678116] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> SLIMBUS3_HOSTLESS mapping ok
+[    5.678423] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> SLIMBUS4_HOSTLESS mapping ok
+[    5.678707] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> VoLTE mapping ok
+[    5.679179] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> MultiMedia5 mapping ok
+[    5.679486] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> LSM1 mapping ok
+[    5.680058] compress asoc: snd-soc-dummy-dai <-> MultiMedia7 mapping ok
+[    5.680731] compress asoc: snd-soc-dummy-dai <-> MultiMedia10 mapping ok
+[    5.681805] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> MultiMedia8 mapping ok
+[    5.682304] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> QCHAT mapping ok
+[    5.682602] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> HDMI_HOSTLESS mapping ok
+[    5.682889] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> Voice2 mapping ok
+[    5.683213] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> INT_HFP_BT_HOSTLESS mapping ok
+[    5.683591] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> MultiMedia6 mapping ok
+[    5.683977] msm8994-asoc-snd fe034000.sound:  tomtom_vifeedback <-> qcom,msm-dai-q6-sb-4-tx.193 mapping ok
+[    5.684267] msm8994-asoc-snd fe034000.sound:  tomtom_rx2 <-> qcom,msm-dai-q6-sb-2-rx.188 mapping ok
+[    5.684570] msm8994-asoc-snd fe034000.sound:  tomtom_tx2 <-> qcom,msm-dai-q6-sb-2-tx.189 mapping ok
+[    5.684822] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> LSM2 mapping ok
+[    5.685119] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> LSM3 mapping ok
+[    5.685421] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> LSM4 mapping ok
+[    5.685725] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> LSM5 mapping ok
+[    5.686038] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> LSM6 mapping ok
+[    5.686420] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> LSM7 mapping ok
+[    5.686720] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> LSM8 mapping ok
+[    5.687169] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> MultiMedia9 mapping ok
+[    5.687516] msm8994-asoc-snd fe034000.sound:  snd-soc-dummy-dai <-> VoWLAN mapping ok
+[    5.688010] compress asoc: snd-soc-dummy-dai <-> MultiMedia11 mapping ok
+[    5.688538] compress asoc: snd-soc-dummy-dai <-> MultiMedia12 mapping ok
+[    5.689055] compress asoc: snd-soc-dummy-dai <-> MultiMedia13 mapping ok
+[    5.689550] compress asoc: snd-soc-dummy-dai <-> MultiMedia14 mapping ok
+[    5.690117] compress asoc: snd-soc-dummy-dai <-> MultiMedia15 mapping ok
+[    5.690783] compress asoc: snd-soc-dummy-dai <-> MultiMedia16 mapping ok
+[    5.691067] msm8994-asoc-snd fe034000.sound:  tomtom_mad1 <-> CPE_LSM_NOHOST mapping ok
+[    5.691324] msm8994-asoc-snd fe034000.sound:  msm-stub-rx <-> qcom,msm-dai-q6-int-fm-rx.197 mapping ok
+[    5.691599] msm8994-asoc-snd fe034000.sound:  msm-stub-tx <-> qcom,msm-dai-q6-int-fm-tx.198 mapping ok
+[    5.691840] msm8994-asoc-snd fe034000.sound:  msm-stub-rx <-> qcom,msm-dai-q6-be-afe-pcm-rx.1 mapping ok
+[    5.692142] msm8994-asoc-snd fe034000.sound:  msm-stub-tx <-> qcom,msm-dai-q6-be-afe-pcm-tx.2 mapping ok
+[    5.692369] msm8994-asoc-snd fe034000.sound:  msm-stub-rx <-> qcom,msm-pri-auxpcm.55 mapping ok
+[    5.692618] msm8994-asoc-snd fe034000.sound:  msm-stub-tx <-> qcom,msm-pri-auxpcm.55 mapping ok
+[    5.692870] msm8994-asoc-snd fe034000.sound:  msm-stub-rx <-> qcom,msm-sec-auxpcm.56 mapping ok
+[    5.693165] msm8994-asoc-snd fe034000.sound:  msm-stub-tx <-> qcom,msm-sec-auxpcm.56 mapping ok
+[    5.693378] msm_audrx_init: dev_nameqcom,msm-dai-q6-sb-0-rx.184
+[    5.820204] android_work: android_work: sent uevent USB_STATE=CONNECTED
+[    5.824020] android_work: android_work: sent uevent USB_STATE=DISCONNECTED
+[    5.910287] msm8994-asoc-snd fe034000.sound:  tomtom_rx1 <-> qcom,msm-dai-q6-sb-0-rx.184 mapping ok
+[    5.910889] msm8994-asoc-snd fe034000.sound:  tomtom_tx1 <-> qcom,msm-dai-q6-sb-0-tx.185 mapping ok
+[    5.911180] msm8994-asoc-snd fe034000.sound:  tomtom_rx1 <-> qcom,msm-dai-q6-sb-1-rx.186 mapping ok
+[    5.911435] msm8994-asoc-snd fe034000.sound:  tomtom_tx1 <-> qcom,msm-dai-q6-sb-1-tx.187 mapping ok
+[    5.911658] msm8994-asoc-snd fe034000.sound:  tomtom_rx1 <-> qcom,msm-dai-q6-sb-3-rx.190 mapping ok
+[    5.911865] msm8994-asoc-snd fe034000.sound:  tomtom_tx1 <-> qcom,msm-dai-q6-sb-3-tx.191 mapping ok
+[    5.912094] msm8994-asoc-snd fe034000.sound:  tomtom_rx1 <-> qcom,msm-dai-q6-sb-4-rx.192 mapping ok
+[    5.912370] msm8994-asoc-snd fe034000.sound:  msm-stub-tx <-> qcom,msm-dai-q6-incall-record-t mapping ok
+[    5.912582] msm8994-asoc-snd fe034000.sound:  msm-stub-tx <-> qcom,msm-dai-q6-incall-record-r mapping ok
+[    5.912795] msm8994-asoc-snd fe034000.sound:  tomtom_mad1 <-> qcom,msm-dai-q6-sb-5-tx.194 mapping ok
+[    5.913061] msm8994-asoc-snd fe034000.sound:  msm-stub-rx <-> qcom,msm-dai-q6-incall-music-rx mapping ok
+[    5.913355] msm8994-asoc-snd fe034000.sound:  msm-stub-rx <-> qcom,msm-dai-q6-incall-music-2- mapping ok
+[    5.913624] msm8994-asoc-snd fe034000.sound:  msm-stub-tx <-> qcom,msm-dai-q6-mi2s-prim.208 mapping ok
+[    5.913907] msm8994-asoc-snd fe034000.sound:  tomtom_rx3 <-> qcom,msm-dai-q6-sb-5-rx.207 mapping ok
+[    5.931387] input: msm8994-tomtom-snd-card Button Jack as /devices/soc.0/fe034000.sound/sound/card0/input4
+[    5.931485] keychord: using input dev msm8994-tomtom-snd-card Button Jack for fevent
+[    5.931592] input: msm8994-tomtom-snd-card Headset Jack as /devices/soc.0/fe034000.sound/sound/card0/input5
+[    5.932150] msm8994-asoc-snd fe034000.sound: property qcom,us-euro-gpios not detected in node /soc/sound
+[    5.948184] android_work: android_work: sent uevent USB_STATE=CONNECTED
+[    5.949245] android_usb gadget: high-speed config #1: fe80f0c8.android_usb
+[    5.993386] init: Starting service 'bootanim'...
+[    5.993944] mdss_fb_blank_sub: mdss_fb_blank+0x130/0x144 mode:0
+[    5.993989] input input0: Already in awake state
+[    5.999717] android_work: android_work: sent uevent USB_STATE=CONFIGURED
+[    6.260066] healthd: Unknown power supply type 'BMS'
+[    6.260187] healthd: Unknown power supply type 'BMS'
+[    6.260411] healthd: Unknown power supply type 'USB_Parallel'
+[    6.260477] healthd: Unknown power supply type 'BMS'
+[    6.260874] healthd: BatteryFullChargePath not found
+[    6.260887] healthd: BatteryCycleCountPath not found
+[    6.593967] type=1400 audit(781907.166:7): avc: denied { module_request } for pid=468 comm="vold" kmod="crypto-cbc-aes-ce" scontext=u:r:vold:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+[    6.594856] type=1400 audit(781907.166:8): avc: denied { module_request } for pid=468 comm="vold" kmod="crypto-cbc-aes-ce-all" scontext=u:r:vold:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+[    6.595115] type=1400 audit(781907.166:9): avc: denied { module_request } for pid=468 comm="vold" kmod="crypto-cryptd(__driver-cbc-aes-ce)" scontext=u:r:vold:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+[    6.595277] type=1400 audit(781907.166:10): avc: denied { module_request } for pid=468 comm="vold" kmod="crypto-cryptd(__driver-cbc-aes-ce)-all" scontext=u:r:vold:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+[    6.595551] bio: create slab <bio-2> at 2
+[    6.742894] subsys-restart: __subsystem_get(): Changing subsys fw_name to modem
+[    6.743269] IPA received MPSS BEFORE_POWERUP
+[    6.743628] ipa ipa_uc_state_check:246 uC is not loaded
+[    6.745116] IPA BEFORE_POWERUP handling is complete
+[    6.747964] pil-q6v5-mss fc880000.qcom,mss: modem: loading from 0x0000000009000000 to 0x000000000f400000
+[    6.756364] pil-q6v5-mss fc880000.qcom,mss: MBA: loading from 0x0000000075900000 to 0x0000000075a00000
+[    6.848160] pil-q6v5-mss fc880000.qcom,mss: MBA boot done
+[    7.062372] EXT4-fs (dm-1): Ignoring removed nomblk_io_submit option
+[    7.066822] EXT4-fs (dm-1): mounted filesystem with ordered data mode. Opts: errors=remount-ro,nomblk_io_submit
+[    7.066940] fs_mgr: check_fs(): mount(/dev/block/dm-1,/data,ext4)=0: Success
+[    7.069434] fs_mgr: check_fs(): unmount(/data) succeeded
+[    7.069480] fs_mgr: Running /system/bin/e2fsck on /dev/block/dm-1
+[    7.489104] e2fsck: e2fsck 1.42.9 (28-Dec-2013)
+[    7.489104] 
+[    7.489155] e2fsck: Pass 1: Checking inodes, blocks, and sizes
+[    7.489155] 
+[    7.489170] e2fsck: Pass 2: Checking directory structure
+[    7.489170] 
+[    7.489182] e2fsck: Pass 3: Checking directory connectivity
+[    7.489182] 
+[    7.489195] e2fsck: Pass 4: Checking reference counts
+[    7.489195] 
+[    7.489207] e2fsck: Pass 5: Checking group summary information
+[    7.489207] 
+[    7.489221] e2fsck: /dev/block/dm-1: 1483/719488 files (6.9% non-contiguous), 97432/2874363 blocks
+[    7.489221] 
+[    7.490341] EXT4-fs (dm-1): Ignoring removed nomblk_io_submit option
+[    7.492977] EXT4-fs (dm-1): mounted filesystem with ordered data mode. Opts: barrier=1,data=ordered,nomblk_io_submit,noauto_da_alloc,errors=panic,inode_readahead_blks=8
+[    7.493111] fs_mgr: __mount(source=/dev/block/dm-1,target=/data,type=ext4)=0
+[    7.494360] init: (Loading properties from /data/local.prop took 0.00s.)
+[    7.518884] init: Starting service 'logd-reinit'...
+[    7.523632] init: Not bootcharting.
+[    7.532750] logd.daemon: reinit
+[    7.534162] init: Service 'logd-reinit' (pid 518) exited with status 0
+[    7.597007] init: Starting service 'exec 5 (/system/bin/tzdatacheck)'...
+[    7.611581] init: Service 'exec 5 (/system/bin/tzdatacheck)' (pid 520) exited with status 0
+[    7.615531] fwu_start_reflash: Start of reflash process
+[    7.615559] synaptics_rmi4_i2c 2-0020: fwu_start_reflash: Requesting firmware image synaptics_fw.bin
+[    7.617849] synaptics_rmi4_i2c 2-0020: parse_header Package ID 3320 Rev 0
+[    7.617871] synaptics_rmi4_i2c 2-0020: parse_header Firwmare build id 2171758
+[    7.618551] synaptics_rmi4_i2c 2-0020: fwu_go_nogo: Image option contains build info.
+[    7.618868] synaptics_rmi4_i2c 2-0020: Device config ID 0x40, 0x05, 0x21, 0x86
+[    7.618891] synaptics_rmi4_i2c 2-0020: .img config ID 0x40, 0x05, 0x21, 0x86
+[    7.618901] synaptics_rmi4_i2c 2-0020: fwu_go_nogo: Nothing needs to be updated
+[    7.618908] synaptics_rmi4_i2c 2-0020: fwu_start_reflash: No need to do reflash.
+[    7.618936] fwu_start_reflash: End of reflash process
+[    7.628966] init: Starting service 'exec 6 (/system/bin/bootstat)'...
+[    7.645007] init: Service 'exec 6 (/system/bin/bootstat)' (pid 522) exited with status 0
+[    7.670897] init: cannot find '/system/bin/update_verifier' (No such file or directory), disabling 'exec 7 (/system/bin/update_verifier)'
+[    7.670966] init: cannot find '/system/bin/install-recovery.sh' (No such file or directory), disabling 'flash_recovery'
+[    7.671368] init: Starting service 'irsc_util'...
+[    7.672345] init: Starting service 'qmuxd'...
+[    7.673455] init: Starting service 'perfd'...
+[    7.674614] init: Starting service 'qti'...
+[    7.675648] init: Starting service 'netmgrd'...
+[    7.676935] init: Starting service 'thermal-engine'...
+[    7.678550] init: Starting service 'imsqmidaemon'...
+[    7.682668] init: Starting service 'zygote'...
+[    7.684664] init: Starting service 'zygote_secondary'...
+[    7.686044] init: Starting service 'audioserver'...
+[    7.687314] init: Starting service 'cameraserver'...
+[    7.688605] init: Starting service 'drm'...
+[    7.690023] init: Starting service 'installd'...
+[    7.691361] init: Starting service 'keystore'...
+[    7.692909] init: Starting service 'mediacodec'...
+[    7.693144] init: couldn't write 533 to /dev/cpuset/camera-daemon/tasks: No such file or directory
+[    7.701756] init: Starting service 'mediadrm'...
+[    7.702862] init: Starting service 'mediaextractor'...
+[    7.710199] init: Starting service 'media'...
+[    7.714770] init: Starting service 'netd'...
+[    7.715653] init: Starting service 'ril-daemon'...
+[    7.716468] type=1400 audit(781908.270:11): avc: denied { module_request } for pid=532 comm="audioserver" kmod="personality-8" scontext=u:r:audioserver:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+[    7.716896] type=1400 audit(781908.280:12): avc: denied { module_request } for pid=531 comm="app_process32" kmod="personality-8" scontext=u:r:zygote:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+[    7.717249] type=1400 audit(781908.283:13): avc: denied { module_request } for pid=537 comm="mediacodec" kmod="personality-8" scontext=u:r:mediacodec:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+[    7.717579] type=1400 audit(781908.286:14): avc: denied { module_request } for pid=534 comm="drmserver" kmod="personality-8" scontext=u:r:drmserver:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+[    7.723193] init: Service 'irsc_util' (pid 523) exited with status 0
+[    7.723942] init: Starting service 'loc_launcher'...
+[    7.724944] init: Starting service 'cnss-daemon'...
+[    7.737176] init: Starting service 'time_daemon'...
+[    7.737996] init: Starting service 'qcamerasvr'...
+[    7.738865] init: Starting service 'atfwd'...
+[    7.741976] init: Starting service 'cnd'...
+[    7.743406] init: Starting service 'bullhead-sh'...
+[    7.746980] init: Starting service 'fingerprintd'...
+[    7.747981] init: Starting service 'cnss_diag'...
+[    7.748802] init: Starting service 'gatekeeperd'...
+[    7.753800] devbw qcom,cpubw.27: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    7.778548] init: Starting service 'perfprofd'...
+[    7.788265] nanohub: nanohub_bl_read_memory: status=79, addr=08000000, length=160776
+[    7.789895] init: Starting service 'imsdatadaemon'...
+[    7.790701] nanohub: i=0, erase=0, erase_write=1, write=0
+[    7.790715] nanohub: i=1, erase=0, erase_write=1, write=0
+[    7.790721] nanohub: i=2, erase=0, erase_write=1, write=0
+[    7.790726] nanohub: i=3, erase=0, erase_write=1, write=0
+[    7.790764] nanohub nanohub: nanohub_download_bl: status=79
+[    7.826653] type=1400 audit(781908.286:15): avc: denied { module_request } for pid=533 comm="cameraserver" kmod="personality-8" scontext=u:r:cameraserver:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+[    7.835858] msm_thermal:set_enabled enabled = 0
+[    8.088850] pil-q6v5-mss fc880000.qcom,mss: modem: Brought out of reset
+[    8.191047] type=1400 audit(781908.290:16): avc: denied { module_request } for pid=539 comm="mediaextractor" kmod="personality-8" scontext=u:r:mediaextractor:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+[    8.192431] type=1400 audit(781908.290:17): avc: denied { module_request } for pid=538 comm="mediadrmserver" kmod="personality-8" scontext=u:r:mediadrmserver:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+[    8.192541] type=1400 audit(781908.300:18): avc: denied { module_request } for pid=540 comm="mediaserver" kmod="personality-8" scontext=u:r:mediaserver:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+[    8.193202] type=1400 audit(781908.340:19): avc: denied { module_request } for pid=560 comm="mm-qcamera-daem" kmod="personality-8" scontext=u:r:camera:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+[    8.193230] pil-q6v5-mss fc880000.qcom,mss: Subsystem error monitoring/handling services are up
+[    8.193285] pil-q6v5-mss fc880000.qcom,mss: modem: Power/Clock ready interrupt received
+[    8.193464] IPA received MPSS AFTER_POWERUP
+[    8.193472] IPA AFTER_POWERUP handling is complete
+[    8.194300] M-Notify: General: 7
+[    8.202904] type=1400 audit(781908.136:20): avc: denied { module_request } for pid=622 comm="lowi-server" kmod="netdev-wlan0" scontext=u:r:location:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+[    8.259824] sysmon-qmi: sysmon_clnt_svc_arrive: Connection established between QMI handle and modem's SSCTL service
+[    8.353758] init: Service 'bullhead-sh' (pid 568) exited with status 0
+[    8.355192] msm_qti_pp_get_rms_value_control, back not active to query rms be_idx:3
+[    8.356952] msm_pcm_volume_ctl_get substream runtime not found
+[    8.357079] msm_pcm_volume_ctl_get substream runtime not found
+[    8.357193] msm_pcm_volume_ctl_get substream runtime not found
+[    8.357276] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.357556] msm_pcm_volume_ctl_get substream runtime not found
+[    8.357642] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.357881] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.358118] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.358440] msm_pcm_volume_ctl_get substream runtime not found
+[    8.358528] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.358769] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.359014] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.359264] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.359508] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.360009] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.399052] apr_tal:Modem Is Up
+[    8.401567] diag: In diag_dci_write_proc, invalid data 0xffffffc070d2b000, peripheral: 0, len: 527
+[    8.418532] Sending QMI_IPA_INIT_MODEM_DRIVER_REQ_V01
+[    8.418871] ipa-wan handle_indication_req:130 not send indication
+[    8.423574] ipa ipa_uc_wdi_event_log_info_handler:326 WDI stats ofst=0x26f44
+[    8.423600] ipa ipa_uc_response_hdlr:388 IPA uC loaded
+[    8.423931] QMI_IPA_INIT_MODEM_DRIVER_REQ_V01 response received
+[    8.580459] msm_qti_pp_get_rms_value_control, back not active to query rms be_idx:3
+[    8.581662] msm_pcm_volume_ctl_get substream runtime not found
+[    8.581746] msm_pcm_volume_ctl_get substream runtime not found
+[    8.581836] msm_pcm_volume_ctl_get substream runtime not found
+[    8.581897] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.582086] msm_pcm_volume_ctl_get substream runtime not found
+[    8.582143] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.582307] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.582478] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.582696] msm_pcm_volume_ctl_get substream runtime not found
+[    8.582753] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.582921] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.583135] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.583306] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.583479] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.583656] msm_compr_audio_effects_config_get: stream or effects inactive
+[    8.640590] init: Service 'flash-nanohub-fw' (pid 388) exited with status 0
+[    9.207807] msm_camera_fill_vreg_params:57 i 0 j 0 cam_vdig
+[    9.207824] msm_camera_fill_vreg_params:95 i 1 j 2 cam_vana
+[    9.207830] msm_camera_fill_vreg_params:76 i 2 j 1 cam_vio
+[    9.207836] msm_camera_fill_vreg_params:76 i 3 j 1 cam_vio
+[    9.207841] msm_camera_fill_vreg_params:95 i 4 j 2 cam_vana
+[    9.207846] msm_camera_fill_vreg_params:57 i 5 j 0 cam_vdig
+[    9.215677] msm_cci_init:897: hw_version = 0x10020001
+[    9.215953] imx377 probe succeeded
+[    9.224678] msm_camera_fill_vreg_params:95 i 2 j 2 cam_vana
+[    9.224696] msm_camera_fill_vreg_params:76 i 3 j 1 cam_vio
+[    9.224702] msm_camera_fill_vreg_params:57 i 4 j 0 cam_vdig
+[    9.224707] msm_camera_fill_vreg_params:57 i 2 j 0 cam_vdig
+[    9.224712] msm_camera_fill_vreg_params:76 i 3 j 1 cam_vio
+[    9.224717] msm_camera_fill_vreg_params:95 i 4 j 2 cam_vana
+[    9.236636] msm_cci_init:897: hw_version = 0x10020001
+[    9.236961] ov5693 probe succeeded
+[    9.252634] msm_csid_init: CSID_VERSION = 0x30010000
+[    9.254773] msm_csid_init: CSID_VERSION = 0x30010000
+[    9.389516] MSM-CPP cpp_init_hardware:1103 CPP HW Version: 0x50010000
+[    9.389539] MSM-CPP cpp_init_hardware:1124 stream_cnt:0
+[    9.398808] MSM-CPP msm_cpp_fw_version:2287 CPP FW Version: 0x10080021
+[    9.523543] ffs_epfile_io(): Error: returning -4 value
+[    9.524031] dwc3 f9200000.dwc3: request ffffffc06c6bb900 was not queued to ep0out
+[    9.524378] init: Service 'adbd' (pid 457) exited with status 1
+[    9.524401] init: Service 'adbd' (pid 457) killing any children in process group
+[    9.524876] init: Starting service 'adbd'...
+[    9.537346] read descriptors
+[    9.537366] read descriptors
+[    9.537376] read strings
+[    9.543956] dwc3_gadget_suspend_interrupt(): state:0. Ignore SUSPEND.
+[    9.684248] android_work: android_work: sent uevent USB_STATE=DISCONNECTED
+[    9.784245] FG: fg_batt_profile_init: Battery SOC: 100
+[    9.796387] android_work: android_work: sent uevent USB_STATE=CONNECTED
+[    9.799893] android_work: android_work: sent uevent USB_STATE=DISCONNECTED
+[    9.924996] android_work: android_work: sent uevent USB_STATE=CONNECTED
+[    9.925172] android_usb gadget: high-speed config #1: fe80f0c8.android_usb
+[    9.976430] android_work: android_work: sent uevent USB_STATE=CONFIGURED
+[   12.993943] ipa-wan ipa_wwan_ioctl:1270 dev(rmnet_data0) register to IPA
+[   12.994457] ipa-wan ipa_wwan_ioctl:1270 dev(rmnet_data1) register to IPA
+[   12.994835] ipa-wan ipa_wwan_ioctl:1270 dev(rmnet_data2) register to IPA
+[   12.995171] ipa-wan ipa_wwan_ioctl:1270 dev(rmnet_data3) register to IPA
+[   12.995517] ipa-wan ipa_wwan_ioctl:1270 dev(rmnet_data4) register to IPA
+[   12.995842] ipa-wan ipa_wwan_ioctl:1270 dev(rmnet_data5) register to IPA
+[   12.996157] ipa-wan ipa_wwan_ioctl:1270 dev(rmnet_data6) register to IPA
+[   12.996601] ipa-wan ipa_wwan_ioctl:1270 dev(rmnet_data7) register to IPA
+[   13.915168] input: uinput-folio as /devices/virtual/input/input6
+[   14.044017] healthd: battery l=100 v=4032 t=29.2 h=2 st=2 c=-894 chg=u
+[   14.207433] of_batterydata_get_best_profile: lge_blt19_tocad_2700mAh_2022227_PMI8994GUI2165 found
+[   14.208596] healthd: battery l=100 v=4177 t=29.0 h=2 st=2 c=-293 chg=u
+[   14.210511] healthd: battery l=100 v=4177 t=29.0 h=2 st=2 c=-293 chg=u
+[   14.211338] healthd: battery l=100 v=4177 t=29.0 h=2 st=2 c=-293 chg=u
+[   14.768131] type=1400 audit(781914.946:21): avc: denied { module_request } for pid=952 comm="Binder:541_2" kmod="netdev-wlan0" scontext=u:r:netd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+[   15.135647] acc_open
+[   15.135674] acc_release
+[   15.258377] QSEECOM: qseecom_load_app: App (fpctzappfingerprint) does'nt exist, loading apps for first time
+[   15.372215] QSEECOM: qseecom_load_app: App with id 4 (fpctzappfingerprint) now loaded
+[   15.749658] msm_post_event: Timed out
+[   15.749675] Evt_type=8002000 Evt_id=1 Evt_cmd=0
+[   15.749682] Evt_session_id=1 Evt_stream_id=0 Evt_arg=-1
+[   15.749689] camera_v4l2_open : posting of NEW_SESSION event failed
+[   15.749695] camera_v4l2_open : Line 594 rc -110
+[   15.773117] msm_csid_init: CSID_VERSION = 0x30010000
+[   15.784386] MSM-CPP cpp_init_hardware:1103 CPP HW Version: 0x50010000
+[   15.784409] MSM-CPP cpp_init_hardware:1124 stream_cnt:0
+[   15.793767] msm_cci_init:897: hw_version = 0x10020001
+[   15.885354] msm_csid_init: CSID_VERSION = 0x30010000
+[   15.896436] MSM-CPP cpp_init_hardware:1103 CPP HW Version: 0x50010000
+[   15.896459] MSM-CPP cpp_init_hardware:1124 stream_cnt:0
+[   15.912101] msm_cci_init:897: hw_version = 0x10020001
+[   16.198301] FUSE: SHORTCIRCUIT enabled [sdcard : 2768]!
+[   16.198334] FUSE: SHORTCIRCUIT enabled [sdcard : 2767]!
+[   16.198600] FUSE: SHORTCIRCUIT enabled [sdcard : 2766]!
+[   16.594633] msm_vidc: info: Opening video instance: 0000000000000000, 0
+[   16.601238] subsys-pil-tz fdce0000.qcom,venus: venus: loading from 0x0000000008800000 to 0x0000000008d00000
+[   16.665626] subsys-pil-tz fdce0000.qcom,venus: venus: Brought out of reset
+[   16.691951] msm_vidc: info: Closed video instance: 0000000000000000
+[   16.694924] msm_vidc: info: Opening video instance: 0000000000000000, 0
+[   16.700965] msm_vidc: info: Closed video instance: 0000000000000000
+[   16.702753] msm_vidc: info: Opening video instance: 0000000000000000, 0
+[   16.711472] msm_vidc: info: Closed video instance: 0000000000000000
+[   16.713960] msm_vidc: info: Opening video instance: 0000000000000000, 0
+[   16.720670] msm_vidc: info: Closed video instance: 0000000000000000
+[   16.729966] msm_vidc: info: Opening video instance: 0000000000000000, 1
+[   16.746201] msm_vidc: info: Closed video instance: 0000000000000000
+[   16.748594] msm_vidc: info: Opening video instance: 0000000000000000, 1
+[   16.769869] msm_vidc: info: Closed video instance: 0000000000000000
+[   16.772269] msm_vidc: info: Opening video instance: 0000000000000000, 1
+[   16.780329] msm_vidc: info: Closed video instance: 0000000000000000
+[   16.783252] msm_vidc: info: Opening video instance: 0000000000000000, 1
+[   16.791182] msm_vidc: info: Closed video instance: 0000000000000000
+[   16.793175] msm_vidc: info: Opening video instance: 0000000000000000, 1
+[   16.800808] msm_vidc: info: Closed video instance: 0000000000000000
+[   16.802775] msm_vidc: info: Opening video instance: 0000000000000000, 1
+[   16.813804] msm_vidc: info: Closed video instance: 0000000000000000
+[   16.817922] msm_vidc: info: Opening video instance: 0000000000000000, 1
+[   16.828453] msm_vidc: info: Closed video instance: 0000000000000000
+[   19.595895] init: Service 'bootanim' (pid 474) exited with status 0
+[   19.597085] init: Starting service 'exec 8 (/system/bin/bootstat)'...
+[   19.614953] init: Service 'exec 8 (/system/bin/bootstat)' (pid 3452) exited with status 0
+[   19.615370] init: Starting service 'exec 9 (/system/bin/bootstat)'...
+[   19.630360] init: Service 'exec 9 (/system/bin/bootstat)' (pid 3453) exited with status 0
+[   19.630677] init: Starting service 'exec 10 (/system/bin/bootstat)'...
+[   19.647152] init: Service 'exec 10 (/system/bin/bootstat)' (pid 3454) exited with status 0
+[   19.647499] init: Starting service 'exec 11 (/system/bin/bootstat)'...
+[   19.666585] init: Service 'exec 11 (/system/bin/bootstat)' (pid 3459) exited with status 0
+[   28.275645] pn548_hwadapter: module license 'unspecified' taints kernel.
+[   28.275674] Disabling lock debugging due to kernel taint
+[   28.994368] FUNC_LOG: [396][pn548_probe()]
+[   28.994395] FUNC_LOG: [399][pn548_probe()]
+[   28.994404] FUNC_LOG: [50][pn548_disable_irq()]
+[   28.994416] pn548:pn548_disable_irq disable IRQ
+[   28.994423] pn548_probe done
+[   32.340214] afe_send_custom_topology_block: AFE SVC cal has invalid size: 0!
+[   32.340233] afe_send_custom_topology: No cal sent for cal_index 7! ret -22
+[   32.340246] afe_get_cal_topology_id: [AFE_TOPOLOGY_CAL] not initialized for this port 16384
+[   34.510143] afe_get_cal_topology_id: [AFE_TOPOLOGY_CAL] not initialized for this port 16384
+[   36.333988] afe_get_cal_topology_id: [AFE_TOPOLOGY_CAL] not initialized for this port 16384
+[   37.524498] afe_get_cal_topology_id: [AFE_TOPOLOGY_CAL] not initialized for this port 16384
+[   37.529352] pn548_dev_open : 10,46
+[   37.529381] pn548:pn548_dev_unlocked_ioctl power off
+[   37.529391] pn548_dev_unlocked_ioctl NFC is alread Off!
+[   37.539504] pn548:pn548_dev_unlocked_ioctl power on
+[   37.549637] pn548:pn548_dev_unlocked_ioctl 0
+[   37.549650] FUNC_LOG: [68][pn548_enable_irq()]
+[   37.549669] pn548:pn548_enable_irq enable IRQ
+[   37.549676] pn548:pn548_dev_unlocked_ioctl 1
+[   37.550031] FUNC_LOG: [148][pn548_dev_read()]
+[   37.550044] pn548: 29
+[   37.550061] Unable to handle kernel NULL pointer dereference at virtual address 00000010
+[   37.550068] pgd = ffffffc03700d000
+[   37.550074] [00000010] *pgd=00000000437a7003, *pmd=0000000000000000
+[   37.550092] Internal error: Oops: 96000006 [#1] PREEMPT SMP
+[   37.550101] Modules linked in: pn548(O) pn548_hwadapter(PO)
+[   37.550131] CPU: 5 PID: 4292 Comm: AsyncTask #3 Tainted: P           O 3.10.73-gcd40c8f-00046-g24ddad0-dirty #4
+[   37.550142] task: ffffffc0346a9580 ti: ffffffc030ed4000 task.ti: ffffffc030ed4000
+[   37.550156] PC is at pn548_dev_read+0x200/0x444 [pn548]
+[   37.550172] LR is at pn548_dev_read+0x1ec/0x444 [pn548]
+[   37.550180] pc : [<ffffffbffc0046c0>] lr : [<ffffffbffc0046ac>] pstate: 40000145
+[   37.550189] sp : ffffffc030ed7dc0
+[   37.550197] x29: ffffffc030ed7e30 x28: ffffffc030ed4000 
+[   37.550210] x27: ffffffc0015cc000 x26: 000000000000003f 
+[   37.550228] x25: ffffffbffc005000 x24: 000000769e6fe4e8 
+[   37.550241] x23: 000000769e6fe274 x22: 000000769e6fe274 
+[   37.550253] x21: ffffffc05df6f000 x20: 0000000000000003 
+[   37.550265] x19: 000000769e6fe274 x18: 0000000000000000 
+[   37.550276] x17: 00000076b94b85e4 x16: ffffffc00030f4a8 
+[   37.550287] x15: 0000000000000000 x14: 0ffffffffffffffe 
+[   37.550298] x13: 0000000000000038 x12: 0101010101010101 
+[   37.550316] x11: 7f7f7f7f7f7f7f7f x10: ff636064715e7564 
+[   37.550329] x9 : 7f7f7f7f7f7f7fff x8 : 0000000000000010 
+[   37.550340] x7 : 352e37332020205b x6 : ffffff80000cc69c 
+[   37.550351] x5 : ffffff80000c0000 x4 : 0000000000000000 
+[   37.550362] x3 : 000000000000001d x2 : ffffffc001a25190 
+[   37.550373] x1 : 0000000000000000 x0 : 0000000000000000 
+[   37.550384] 
+[   37.550391] Process AsyncTask #3 (pid: 4292, stack limit = 0xffffffc030ed4058)
+[   37.550397] Call trace:
+[   37.550407] [<ffffffbffc0046c0>] pn548_dev_read+0x200/0x444 [pn548]
+[   37.550420] [<ffffffc00030ecd0>] vfs_read+0xa0/0x124
+[   37.550428] [<ffffffc00030f508>] SyS_read+0x60/0xac
+[   37.550437] Code: 2a1f03f6 14000025 b90003ff 321c03e8 (f9400108) 
+[   37.550445] ---[ end trace ea97bf2b2ff89972 ]---
+[   37.553061] Kernel panic - not syncing: Fatal exception
+[   37.553079] CPU3: stopping
+[   37.553100] 
+[   37.553108] CPU: 3 PID: 0 Comm: swapper/3 Tainted: P      D    O 3.10.73-gcd40c8f-00046-g24ddad0-dirty #4
+[   37.553115] task: ffffffc0072ea040 ti: ffffffc007300000 task.ti: ffffffc007300000
+[   37.553139] PC is at lpm_cpuidle_enter+0x494/0x530
+[   37.553149] LR is at lpm_cpuidle_enter+0x480/0x530
+[   37.553154] pc : [<ffffffc0008de26c>] lr : [<ffffffc0008de258>] pstate: 80000145
+[   37.553161] sp : ffffffc007303e30
+[   37.553166] x29: ffffffc007303e30 x28: 0000000000000001 
+[   37.553177] x27: ffffffc06c6d7a18 x26: ffffffc001000bb8 
+[   37.553186] x25: 0000000000000c9a x24: ffffffc000ee3000 
+[   37.553196] x23: ffffffc074ec21b0 x22: ffffffc000ee0000 
+[   37.553206] x21: ffffffc06ca26018 x20: 0000000000000000 
+[   37.553216] x19: ffffffc007300000 x18: 000000769aec9774 
+[   37.553225] x17: 00000076b9468cd0 x16: ffffffc000285e18 
+[   37.553235] x15: 00000000436180dc x14: 0ffffffffffffffe 
+[   37.553244] x13: ffffffc074ebf9f8 x12: 000000000000003f 
+[   37.553252] x11: 0000000000000040 x10: 0000000000000030 
+[   37.553260] x9 : 0000000000000000 x8 : 0000000000000002 
+[   37.553269] x7 : 00000000333aa9a6 x6 : 002bb5d2e731f9f5 
+[   37.553277] x5 : 0000000000000018 x4 : 00000000341555b6 
+[   37.553285] x3 : 0000000225c17d03 x2 : 0000000000000024 
+[   37.553293] x1 : 00000000000003e8 x0 : 0000000000313d63 
+[   37.553301] 
+[   37.553301] PC: 0xffffffc0008de16c:
+[   37.553307] e168  8b1c141c52800021 97fec142b9400b80 2a1c03e153001c1c 97fecb3c2a1403e0 f9405800d0003020 340002a1b9400801 11000421b9405261 f9401003b9005261
+[   37.553331] e1a8  f9400460b4000143 f94000642a1403e1 f90043a32a1c03e2 f94043a3d63f0080 b5ffff00f8410c60 51000400b9405260 f9400260b9005260 9417e70736080040
+[   37.553354] e1e8  aa1a03e1aa1503e0 528000232a1403e2 f94252a097fffe0b 8b1b001bb9405661 39403360b90097a1 b94492a035000080 5400008b6b00029f 910253a1d28000a0
+[   37.553377] e228  b9400b6097e6844f 7100041f51000800 97e78db854000048 5280000197ee1171 5280000352800002 97e66c5997e5d343 d2807d01cb190000 b9000af99ac10819
+[   37.553400] e268  f94076d6d50342ff b9400ac0b94006f7 97e70e94340002a0 11000400b9405260 f94012d5b9005260 f94002a3b4000115 f94006a012800001 d63f00602a1703e2
+[   37.553423] e2a8  b5ffff40f8410ea0 51000400b9405260 f9400260b9005260 9417e6cf36080040 f94047a197e70e5a f9404fb32a1403e0 f9400301f9417038 54000040eb01027f
+[   37.553446] e2e8  a94153f397e50a4b a94363f7a9425bf5 a94573fba9446bf9 d65f03c0a8ca7bfd d65f03c052800140 7100103fa9be7bfd 910003fd53001c42 2a0103f3a90153f3
+[   37.553469] e328  d0003bc1540001c8 3873482191246021 8b21886110000063 52800021d61f0020 5280006114000002 14000005b9001001 14000003b900101f 52800013b900101f
+[   37.553492] e368  2a1303e1f9400000 2a0003f497f19075 d0003bc134000120 9124802190005b00 9100402191299000 2a1403e32a1303e2 2a1403e09417b69d a8c27bfda94153f3
+[   37.553516] 
+[   37.553516] LR: 0xffffffc0008de158:
+[   37.553521] e158  2a1403e09417e72a f94252a097fec99c 8b1c141c52800021 97fec142b9400b80 2a1c03e153001c1c 97fecb3c2a1403e0 f9405800d0003020 340002a1b9400801
+[   37.553544] e198  11000421b9405261 f9401003b9005261 f9400460b4000143 f94000642a1403e1 f90043a32a1c03e2 f94043a3d63f0080 b5ffff00f8410c60 51000400b9405260
+[   37.553567] e1d8  f9400260b9005260 9417e70736080040 aa1a03e1aa1503e0 528000232a1403e2 f94252a097fffe0b 8b1b001bb9405661 39403360b90097a1 b94492a035000080
+[   37.553590] e218  5400008b6b00029f 910253a1d28000a0 b9400b6097e6844f 7100041f51000800 97e78db854000048 5280000197ee1171 5280000352800002 97e66c5997e5d343
+[   37.553613] e258  d2807d01cb190000 b9000af99ac10819 f94076d6d50342ff b9400ac0b94006f7 97e70e94340002a0 11000400b9405260 f94012d5b9005260 f94002a3b4000115
+[   37.553636] e298  f94006a012800001 d63f00602a1703e2 b5ffff40f8410ea0 51000400b9405260 f9400260b9005260 9417e6cf36080040 f94047a197e70e5a f9404fb32a1403e0
+[   37.553659] e2d8  f9400301f9417038 54000040eb01027f a94153f397e50a4b a94363f7a9425bf5 a94573fba9446bf9 d65f03c0a8ca7bfd d65f03c052800140 7100103fa9be7bfd
+[   37.553682] e318  910003fd53001c42 2a0103f3a90153f3 d0003bc1540001c8 3873482191246021 8b21886110000063 52800021d61f0020 5280006114000002 14000005b9001001
+[   37.553705] 
+[   37.553705] SP: 0xffffffc007303d30:
+[   37.553711] 3d30  00000000341555b6 0000000000000018 002bb5d2e731f9f5 00000000333aa9a6 0000000000000002 0000000000000000 0000000000000030 0000000000000040
+[   37.553733] 3d70  000000000000003f ffffffc074ebf9f8 0ffffffffffffffe 00000000436180dc ffffffc000285e18 00000076b9468cd0 000000769aec9774 ffffffc007300000
+[   37.553756] 3db0  0000000000000000 ffffffc06ca26018 ffffffc000ee0000 ffffffc074ec21b0 ffffffc000ee3000 0000000000000c9a ffffffc001000bb8 ffffffc06c6d7a18
+[   37.553779] 3df0  0000000000000001 ffffffc007303e30 ffffffc0008de258 ffffffc007303e30 ffffffc0008de26c 0000000080000145 ffffffc074ec21b0 ffffffc000ee3000
+[   37.553801] 3e30  ffffffc007303ed0 ffffffc0008da8e4 ffffffc074ec21b0 0000000000000000 00000008bdc5a471 ffffffc000edf000 ffffffc06c68a400 ffffffc001a77799
+[   37.553824] 3e70  ffffffc00134664b 000000000007d000 ffffffc000ee2000 0000004000000000 ffffffc007303ed0 ffffffc0008da8c0 ffffffc074ec21b0 0000000000000000
+[   37.553847] 3eb0  ffffffc06c6d7a18 ffffffc000ee3000 000000036c68a400 bf5d153c03042b1d ffffffc007303f10 ffffffc0008daa40 ffffffc074ec21b0 0000000000000000
+[   37.553869] 3ef0  0000000000000000 00000000734b0000 ffffffc06c68a400 0000000000000000 ffffffc007303f60 ffffffc000205038 ffffffc007300000 ffffffc001a0fa40
+[   37.553892] 
+[   37.553898] CPU: 3 PID: 0 Comm: swapper/3 Tainted: P      D    O 3.10.73-gcd40c8f-00046-g24ddad0-dirty #4
+[   37.553903] Call trace:
+[   37.553913] [<ffffffc000208530>] dump_backtrace+0x0/0x278
+[   37.553920] [<ffffffc0002087b8>] show_stack+0x10/0x1c
+[   37.553929] [<ffffffc000ecd288>] dump_stack+0x1c/0x28
+[   37.553937] [<ffffffc00020ffcc>] handle_IPI+0x168/0x2d0
+[   37.553943] [<ffffffc0002007b8>] gic_handle_irq+0x78/0xa0
+[   37.553949] Exception stack(0xffffffc007303ce0 to 0xffffffc007303e00)
+[   37.553957] 3ce0: 07300000 ffffffc0 00000000 00000000 07303e30 ffffffc0 008de26c ffffffc0
+[   37.553965] 3d00: 80000145 00000000 07300000 ffffffc0 00313d63 00000000 000003e8 00000000
+[   37.553973] 3d20: 00000024 00000000 25c17d03 00000002 341555b6 00000000 00000018 00000000
+[   37.553981] 3d40: e731f9f5 002bb5d2 333aa9a6 00000000 00000002 00000000 00000000 00000000
+[   37.553989] 3d60: 00000030 00000000 00000040 00000000 0000003f 00000000 74ebf9f8 ffffffc0
+[   37.553997] 3d80: fffffffe 0fffffff 436180dc 00000000 00285e18 ffffffc0 b9468cd0 00000076
+[   37.554005] 3da0: 9aec9774 00000076 07300000 ffffffc0 00000000 00000000 6ca26018 ffffffc0
+[   37.554013] 3dc0: 00ee0000 ffffffc0 74ec21b0 ffffffc0 00ee3000 ffffffc0 00000c9a 00000000
+[   37.554021] 3de0: 01000bb8 ffffffc0 6c6d7a18 ffffffc0 00000001 00000000 07303e30 ffffffc0
+[   37.554028] [<ffffffc000203da4>] el1_irq+0x64/0xd4
+[   37.554036] [<ffffffc0008da8e0>] cpuidle_enter_state+0x40/0xb8
+[   37.554042] [<ffffffc0008daa3c>] cpuidle_idle_call+0xe4/0x13c
+[   37.554050] [<ffffffc000205034>] arch_cpu_idle+0x8/0x20
+[   37.554058] [<ffffffc0002715b4>] cpu_startup_entry+0x1c4/0x234
+[   37.554067] [<ffffffc000ec86ec>] secondary_start_kernel+0x108/0x118
+[   37.554073] CPU0: stopping
+[   37.554081] 
+[   37.554089] CPU: 0 PID: 376 Comm: logd.klogd Tainted: P      D    O 3.10.73-gcd40c8f-00046-g24ddad0-dirty #4
+[   37.554096] task: ffffffc0683aab00 ti: ffffffc067c54000 task.ti: ffffffc067c54000
+[   37.554113] PC is at _raw_spin_unlock_irq+0x20/0x44
+[   37.554133] LR is at finish_task_switch+0x54/0x120
+[   37.554138] pc : [<ffffffc000ed8ec8>] lr : [<ffffffc000251700>] pstate: 60000105
+[   37.554143] sp : ffffffc067c57630
+[   37.554147] x29: ffffffc067c57630 x28: ffffffc068766100 
+[   37.554156] x27: 0000000000000990 x26: ffffffc001344000 
+[   37.554164] x25: ffffffc001001000 x24: ffffffc067c54000 
+[   37.554172] x23: 0000000000000001 x22: ffffffc067c54000 
+[   37.554181] x21: ffffffc074e8fdc0 x20: ffffffc06c04f300 
+[   37.554189] x19: ffffffc007299580 x18: 0000000000000000 
+[   37.554196] x17: 0000000000000000 x16: 0000000000000000 
+[   37.554204] x15: 0000000000000000 x14: 0ffffffffffffffe 
+[   37.554212] x13: 0000000000000030 x12: 0101010101010101 
+[   37.554220] x11: 7f7f7f7f7f7f7f7f x10: 7757597353435251 
+[   37.554228] x9 : ffffffc067c57660 x8 : ffffffc0683ab070 
+[   37.554236] x7 : 0000000000000180 x6 : ffffffc001a0f940 
+[   37.554245] x5 : ffffffc074e88ea8 x4 : ffffffc00045a6c0 
+[   37.554252] x3 : 0000000000000000 x2 : 0000000000000000 
+[   37.554260] x1 : 0000000000003136 x0 : ffffffc074e8fdc0 
+[   37.554268] 
+[   37.554274] CPU: 0 PID: 376 Comm: logd.klogd Tainted: P      D    O 3.10.73-gcd40c8f-00046-g24ddad0-dirty #4
+[   37.554280] Call trace:
+[   37.554290] [<ffffffc000208530>] dump_backtrace+0x0/0x278
+[   37.554298] [<ffffffc0002087b8>] show_stack+0x10/0x1c
+[   37.554305] [<ffffffc000ecd288>] dump_stack+0x1c/0x28
+[   37.554313] [<ffffffc00020ffcc>] handle_IPI+0x168/0x2d0
+[   37.554320] [<ffffffc0002007b8>] gic_handle_irq+0x78/0xa0
+[   37.554325] Exception stack(0xffffffc067c574e0 to 0xffffffc067c57600)
+[   37.554334] 74e0: 07299580 ffffffc0 6c04f300 ffffffc0 67c57630 ffffffc0 00ed8ec8 ffffffc0
+[   37.554342] 7500: 60000105 00000000 00000000 00000000 74e8fdc0 ffffffc0 00003136 00000000
+[   37.554350] 7520: 00000000 00000000 00000000 00000000 0045a6c0 ffffffc0 74e88ea8 ffffffc0
+[   37.554358] 7540: 01a0f940 ffffffc0 00000180 00000000 683ab070 ffffffc0 67c57660 ffffffc0
+[   37.554366] 7560: 53435251 77575973 7f7f7f7f 7f7f7f7f 01010101 01010101 00000030 00000000
+[   37.554374] 7580: fffffffe 0fffffff 00000000 00000000 00000000 00000000 00000000 00000000
+[   37.554382] 75a0: 00000000 00000000 07299580 ffffffc0 6c04f300 ffffffc0 74e8fdc0 ffffffc0
+[   37.554390] 75c0: 67c54000 ffffffc0 00000001 00000000 67c54000 ffffffc0 01001000 ffffffc0
+[   37.554398] 75e0: 01344000 ffffffc0 00000990 00000000 68766100 ffffffc0 67c57630 ffffffc0
+[   37.554405] [<ffffffc000203da4>] el1_irq+0x64/0xd4
+[   37.554412] [<ffffffc0002516fc>] finish_task_switch+0x50/0x120
+[   37.554419] [<ffffffc000ed7920>] __schedule+0x940/0xb74
+[   37.554426] [<ffffffc000ed7bb4>] schedule+0x60/0x6c
+[   37.554434] [<ffffffc000ed658c>] schedule_hrtimeout_range_clock+0x2c/0x54
+[   37.554441] [<ffffffc000ed65c0>] schedule_hrtimeout_range+0xc/0x18
+[   37.554449] [<ffffffc00031fd40>] poll_schedule_timeout+0x54/0xbc
+[   37.554455] [<ffffffc00032061c>] do_select+0x444/0x4b0
+[   37.554462] [<ffffffc000320888>] core_sys_select+0x200/0x320
+[   37.554468] [<ffffffc000320c68>] SyS_pselect6+0x180/0x230
+[   37.554475] CPU2: stopping
+[   37.554482] 
+[   37.554489] CPU: 2 PID: 0 Comm: swapper/2 Tainted: P      D    O 3.10.73-gcd40c8f-00046-g24ddad0-dirty #4
+[   37.554495] task: ffffffc0072e9580 ti: ffffffc0072fc000 task.ti: ffffffc0072fc000
+[   37.554508] PC is at _raw_spin_unlock_irq+0x20/0x44
+[   37.554526] LR is at finish_task_switch+0x54/0x120
+[   37.554534] pc : [<ffffffc000ed8ec8>] lr : [<ffffffc000251700>] pstate: 60000105
+[   37.554538] sp : ffffffc0072ffcf0
+[   37.554543] x29: ffffffc0072ffcf0 x28: 0000000000000000 
+[   37.554552] x27: 00000000000007bb x26: ffffffc001344000 
+[   37.554560] x25: ffffffc001001000 x24: ffffffc0072fc000 
+[   37.554568] x23: 0000000000000001 x22: ffffffc0072fc000 
+[   37.554576] x21: ffffffc074eb1dc0 x20: ffffffc06c04f300 
+[   37.554585] x19: ffffffc00729e0c0 x18: 0000000000000000 
+[   37.554592] x17: 0000000000000000 x16: 0000000000000000 
+[   37.554600] x15: 0000000000000000 x14: 0ffffffffffffffe 
+[   37.554608] x13: 0000000000000030 x12: 0101010101010101 
+[   37.554617] x11: 7f7f7f7f7f7f7f7f x10: 7757597353435251 
+[   37.554625] x9 : ffffffc0072ffd20 x8 : ffffffc0072e9af0 
+[   37.554633] x7 : 0000000000000180 x6 : ffffffc001a0f940 
+[   37.554641] x5 : ffffffc074eaaea8 x4 : ffffffc00045a6c0 
+[   37.554649] x3 : 0000000000000000 x2 : 0000000000000000 
+[   37.554657] x1 : 0000000000003788 x0 : ffffffc074eb1dc0 
+[   37.554666] 
+[   37.554666] PC: 0xffffffc000ed8dc8:
+[   37.554671] 8dc8  35ffffa188017e60 a94153f3aa1403e0 d65f03c0a8c27bfd 910003fda9be7bfd aa0003f3f9000bf3 52800020d50342df 52b0000097cde3c3 d503205fd50320bf
+[   37.554695] 8e08  35ffffc1885ffe61 35ffffa188017e60 a8c27bfdf9400bf3 a9bf7bfdd65f03c0 79400001910003fd 489ffc0111000421 d503209fd5033f9f 97cde3e452800020
+[   37.554718] 8e48  9272c400910003e0 36080040f9400000 a8c17bfd97fffbea a9bf7bfdd65f03c0 79400002910003fd 489ffc0211000442 d503209fd5033f9f 52800020d51b4221
+[   37.554742] 8e88  910003e097cde3d3 f94000009272c400 97fffbd936080040 d65f03c0a8c17bfd 910003fda9bf7bfd 1100042179400001 d5033f9f489ffc01 d50342ffd503209f
+[   37.554765] 8ec8  97cde3c252800020 9272c400910003e0 36080040f9400000 a8c17bfd97fffbc8 a9bf7bfdd65f03c0 885f7c01910003fd 8802fc0151000421 d5033f9f35ffffa2
+[   37.554787] 8f08  52800020d503209f 910003e097cde3b1 f94000009272c400 97fffbb736080040 d65f03c0a8c17bfd 910003fda9bf7bfd 51000442885f7c02 35ffffa38803fc02
+[   37.554810] 8f48  d503209fd5033f9f 52800020d51b4221 910003e097cde39f f94000009272c400 97fffba536080040 d65f03c0a8c17bfd 910003fda9bf7bfd 51000421885f7c01
+[   37.554833] 8f88  35ffffa28802fc01 d503209fd5033f9f 52800020d50342ff 910003e097cde38d f94000009272c400 97fffb9336080040 d65f03c0a8c17bfd 52800001a9bf7bfd
+[   37.554858] 
+[   37.554858] LR: 0xffffffc000251600:
+[   37.554863] 1600  aa1303e08b130293 f94006a094321d5c f8607b40b9405400 aa1303e08b000294 540000c0eb14027f f94002c194321dff 94321e0caa1703e0 a94153f317ffffea
+[   37.554886] 1640  a94363f7a9425bf5 a8c57bfda9446bf9 a9bd7bfdd65f03c0 f9000bf3910003fd f9452401aa0003f3 f90013a1f9452002 f90017a2cb010042 f94013a194321d40
+[   37.554909] 1680  f94017a252800003 9128a26052800004 b909fa7f97ffdc27 94321de2aa1303e0 a8c37bfdf9400bf3 a9bb7bfdd65f03c0 a9025bf5910003fd f9001bf7a90153f3
+[   37.554931] 16c0  aa0103f3aa0003f5 f904581ff9445814 9272c416910003e0 f9400037f0006480 f9400ac1f940b800 35000600b9400000 aa1503e0d5033abf 94321debb9002a7f
+[   37.554954] 1700  aa1603e1528002e0 340002409407f28e f9417401f9400ac0 aa0103e0f90027a1 d53b423597ff1aeb b0006460d50342df f9451800f94027a1 d2c00800f9400002
+[   37.554977] 1740  f94020228b000040 97ff1b658b000040 b4000154d51b4235 885f7c4091013282 8801fc4051000400 d5033bbf35ffffa1 aa1403e035000060 f10102ff97ff318d
+[   37.555000] 1780  91004262540001c1 51000400885f7c40 35ffffa18801fc40 350000e0d5033bbf 97ff31f0aa1303e0 aa1303e014000004 17ffffcf9401d5dc a9425bf5a94153f3
+[   37.555022] 17c0  a8c57bfdf9401bf7 d0006481d65f03c0 910003fda9bf7bfd b9400021f9417c21 aa0003e235000201 9272c400910003e0 b94330429113c041 f0008780b9405003
+[   37.555046] 
+[   37.555046] SP: 0xffffffc0072ffbf0:
+[   37.555052] fbf0  ffffffc00045a6c0 ffffffc074eaaea8 ffffffc001a0f940 0000000000000180 ffffffc0072e9af0 ffffffc0072ffd20 7757597353435251 7f7f7f7f7f7f7f7f
+[   37.555074] fc30  0101010101010101 0000000000000030 0ffffffffffffffe 0000000000000000 0000000000000000 0000000000000000 0000000000000000 ffffffc00729e0c0
+[   37.555096] fc70  ffffffc06c04f300 ffffffc074eb1dc0 ffffffc0072fc000 0000000000000001 ffffffc0072fc000 ffffffc001001000 ffffffc001344000 00000000000007bb
+[   37.555119] fcb0  0000000000000000 ffffffc0072ffcf0 ffffffc000251700 ffffffc0072ffcf0 ffffffc000ed8ec8 0000000060000105 ffffffc0072ffd20 00000000ffffffd8
+[   37.555141] fcf0  ffffffc0072ffd00 ffffffc000251700 ffffffc0072ffd50 ffffffc000ed7924 ffffffc074eab6e4 ffffffc0072e9580 ffffffc00729e0c0 ffffffc001d87370
+[   37.555164] fd30  ffffffc001a12dc0 ffffffc0072e9580 ffffffc00729e0c0 ffffffc00729e0c0 ffffffc0072fff50 ffffffc000ed7bb8 ffffffc0072fc000 ffffffc001a0fa40
+[   37.555187] fd70  ffffffc001a0fa40 ffffffc000ee0000 0000000000000040 ffffffc001a77799 ffffffc00134664b 000000000007d000 ffffffc000ee2000 0000004000000000
+[   37.555209] fdb0  0000000000000000 0000000000000180 0000000000000180 ffffffc001d87370 ffffffc074eaaea8 ffffffc001a0f940 0000000000000002 ffffffc001a0f940
+[   37.555232] 
+[   37.555238] CPU: 2 PID: 0 Comm: swapper/2 Tainted: P      D    O 3.10.73-gcd40c8f-00046-g24ddad0-dirty #4
+[   37.555244] Call trace:
+[   37.555254] [<ffffffc000208530>] dump_backtrace+0x0/0x278
+[   37.555261] [<ffffffc0002087b8>] show_stack+0x10/0x1c
+[   37.555269] [<ffffffc000ecd288>] dump_stack+0x1c/0x28
+[   37.555277] [<ffffffc00020ffcc>] handle_IPI+0x168/0x2d0
+[   37.555283] [<ffffffc0002007b8>] gic_handle_irq+0x78/0xa0
+[   37.555289] Exception stack(0xffffffc0072ffba0 to 0xffffffc0072ffcc0)
+[   37.555298] fba0: 0729e0c0 ffffffc0 6c04f300 ffffffc0 072ffcf0 ffffffc0 00ed8ec8 ffffffc0
+[   37.555306] fbc0: 60000105 00000000 00000000 00000000 74eb1dc0 ffffffc0 00003788 00000000
+[   37.555314] fbe0: 00000000 00000000 00000000 00000000 0045a6c0 ffffffc0 74eaaea8 ffffffc0
+[   37.555322] fc00: 01a0f940 ffffffc0 00000180 00000000 072e9af0 ffffffc0 072ffd20 ffffffc0
+[   37.555330] fc20: 53435251 77575973 7f7f7f7f 7f7f7f7f 01010101 01010101 00000030 00000000
+[   37.555338] fc40: fffffffe 0fffffff 00000000 00000000 00000000 00000000 00000000 00000000
+[   37.555346] fc60: 00000000 00000000 0729e0c0 ffffffc0 6c04f300 ffffffc0 74eb1dc0 ffffffc0
+[   37.555354] fc80: 072fc000 ffffffc0 00000001 00000000 072fc000 ffffffc0 01001000 ffffffc0
+[   37.555362] fca0: 01344000 ffffffc0 000007bb 00000000 00000000 00000000 072ffcf0 ffffffc0
+[   37.555369] [<ffffffc000203da4>] el1_irq+0x64/0xd4
+[   37.555376] [<ffffffc0002516fc>] finish_task_switch+0x50/0x120
+[   37.555383] [<ffffffc000ed7920>] __schedule+0x940/0xb74
+[   37.555390] [<ffffffc000ed7bb4>] schedule+0x60/0x6c
+[   37.555398] [<ffffffc000ed7f18>] schedule_preempt_disabled+0x10/0x24
+[   37.555406] [<ffffffc0002715f4>] cpu_startup_entry+0x204/0x234
+[   37.555415] [<ffffffc000ec86ec>] secondary_start_kernel+0x108/0x118
+[   37.555422] CPU4: stopping
+[   37.555432] 
+[   37.555441] CPU: 4 PID: 0 Comm: swapper/4 Tainted: P      D    O 3.10.73-gcd40c8f-00046-g24ddad0-dirty #4
+[   37.555449] task: ffffffc0072eab00 ti: ffffffc007304000 task.ti: ffffffc007304000
+[   37.555463] PC is at __do_softirq+0xb4/0x28c
+[   37.555471] LR is at __do_softirq+0xa4/0x28c
+[   37.555477] pc : [<ffffffc000228ed8>] lr : [<ffffffc000228ec8>] pstate: 40000145
+[   37.555482] sp : ffffffc007307b70
+[   37.555488] x29: ffffffc007307b70 x28: 0000000000000001 
+[   37.555501] x27: 0000000000200040 x26: ffffffc00133fe42 
+[   37.555512] x25: 0000000000000c1c x24: ffffffc001d87370 
+[   37.555523] x23: ffffffc001a1e000 x22: ffffffc000ee2000 
+[   37.555534] x21: ffffffc000ee1000 x20: 0000000000000080 
+[   37.555545] x19: ffffffc007304000 x18: 0000000000000000 
+[   37.555556] x17: 0000000000000000 x16: 0000000000000000 
+[   37.555567] x15: 0000000000000000 x14: 0000000000000000 
+[   37.555578] x13: 0000000000000000 x12: 0000000004c5d83d 
+[   37.555588] x11: 0000000000000000 x10: 0000000000000000 
+[   37.555599] x9 : ffffffc000203000 x8 : 00000034b5193519 
+[   37.555610] x7 : 00000000333aa9a6 x6 : ffffffc0072eab00 
+[   37.555621] x5 : 00000008be29706e x4 : ffffffc001a0f9d8 
+[   37.555632] x3 : 00000008be591067 x2 : 0000000000000001 
+[   37.555643] x1 : ffffffc001d38740 x0 : 0000000000000100 
+[   37.555654] 
+[   37.555654] PC: 0xffffffc000228dd8:
+[   37.555660] 8dd8  a8c27bfda94153f3 a9be7bfdd65f03c0 f9000bf3910003fd f9404401aa0003f3 340000e0d63f0020 aa1303e0f9401261 52800003f9400e62 94007f38cb010042
+[   37.555696] 8e18  a8c27bfdf9400bf3 a9b77bfdd65f03c0 a9025bf5910003fd d00065d6b00065d5 a90573fba90153f3 a90363f7f946caa0 f9400013a9046bf9 97fffbbb52800040
+[   37.555729] 8e58  f90043a08b130000 9272c413910003e0 b940141bf9400a60 b900140112147b61 d37a7c009408e663 b8606834f94016c1 9400c3f0f9400a60 9400a39c52802000
+[   37.555762] 8e98  d000bfb79408e65b 52800140b9008ba0 910302e0b9008fa0 d00088c0f9003ba0 f9003fb5911edc00 9408e650f90037a0 f94016c1d37a7c00 d50342ffb820683f
+[   37.555795] 8ed8  f9403ba0d2800015 360009948b15001c 9343feb8f00065c0 b9405279d538d082 f945b8002a1803fa 910020008b384800 11000421b8606841 f00065c0b8206841
+[   37.555828] 8f18  b9400801f942f400 b940526134000281 b900526111000421 b4000122f9401002 2a1a03e1f9400440 f90033a2f9400043 f94033a2d63f0060 b5ffff20f8410c40
+[   37.555861] 8f58  51000400b9405260 f9400260b9005260 9432bba536080040 f8606aa1910302e0 d63f0020aa1c03e0 f941f800900065c0 34000241b9400801 11000421b9405261
+[   37.555894] 8f98  f940101cb9005261 f9400382b40000fc f94007802a1a03e1 f8410f80d63f0040 b9405260b5ffff60 b900526051000400 36080040f9400260 b94052609432bb8c
+[   37.555927] 
+[   37.555927] LR: 0xffffffc000228dc8:
+[   37.555933] 8dc8  9101826091379021 f900467497fffdb6 a8c27bfda94153f3 a9be7bfdd65f03c0 f9000bf3910003fd f9404401aa0003f3 340000e0d63f0020 aa1303e0f9401261
+[   37.555966] 8e08  52800003f9400e62 94007f38cb010042 a8c27bfdf9400bf3 a9b77bfdd65f03c0 a9025bf5910003fd d00065d6b00065d5 a90573fba90153f3 a90363f7f946caa0
+[   37.555999] 8e48  f9400013a9046bf9 97fffbbb52800040 f90043a08b130000 9272c413910003e0 b940141bf9400a60 b900140112147b61 d37a7c009408e663 b8606834f94016c1
+[   37.556032] 8e88  9400c3f0f9400a60 9400a39c52802000 d000bfb79408e65b 52800140b9008ba0 910302e0b9008fa0 d00088c0f9003ba0 f9003fb5911edc00 9408e650f90037a0
+[   37.556065] 8ec8  f94016c1d37a7c00 d50342ffb820683f f9403ba0d2800015 360009948b15001c 9343feb8f00065c0 b9405279d538d082 f945b8002a1803fa 910020008b384800
+[   37.556098] 8f08  11000421b8606841 f00065c0b8206841 b9400801f942f400 b940526134000281 b900526111000421 b4000122f9401002 2a1a03e1f9400440 f90033a2f9400043
+[   37.556131] 8f48  f94033a2d63f0060 b5ffff20f8410c40 51000400b9405260 f9400260b9005260 9432bba536080040 f8606aa1910302e0 d63f0020aa1c03e0 f941f800900065c0
+[   37.556164] 8f88  34000241b9400801 11000421b9405261 f940101cb9005261 f9400382b40000fc f94007802a1a03e1 f8410f80d63f0040 b9405260b5ffff60 b900526051000400
+[   37.556198] 
+[   37.556198] SP: 0xffffffc007307a70:
+[   37.556203] 7a70  ffffffc001a0f9d8 00000008be29706e ffffffc0072eab00 00000000333aa9a6 00000034b5193519 ffffffc000203000 0000000000000000 0000000000000000
+[   37.556236] 7ab0  0000000004c5d83d 0000000000000000 0000000000000000 0000000000000000 0000000000000000 0000000000000000 0000000000000000 ffffffc007304000
+[   37.556269] 7af0  0000000000000080 ffffffc000ee1000 ffffffc000ee2000 ffffffc001a1e000 ffffffc001d87370 0000000000000c1c ffffffc00133fe42 0000000000200040
+[   37.556302] 7b30  0000000000000001 ffffffc007307b70 ffffffc000228ec8 ffffffc007307b70 ffffffc000228ed8 0000000040000145 ffffffc000ee1000 00000000fffecc70
+[   37.556335] 7b70  ffffffc007307c00 ffffffc000229148 00000000000001c0 ffffffc074ed3dc0 ffffffc000ee0000 ffffffc001d87370 0000000000000004 ffffffc001d87370
+[   37.556368] 7bb0  0000000000000c1c ffffffc00133fe42 ffffffc06c6d7c58 0000000000000001 ffffffc007307c00 ffffffc0013427b7 ffffffc001a1e0c0 ffffffc000ee1000
+[   37.556400] 7bf0  00000000fffecc71 0000000a00000004 ffffffc007307c20 ffffffc000229374 ffffffc007304000 ffffffc00022934c ffffffc007307c40 ffffffc000256638
+[   37.556433] 7c30  ffffffc000ee3000 ffffffc000256658 ffffffc007307c80 ffffffc00020ff54 ffffffc000ede000 0000000000000004 0000000000000000 ffffffc007307d10
+[   37.556466] 
+[   37.556474] CPU: 4 PID: 0 Comm: swapper/4 Tainted: P      D    O 3.10.73-gcd40c8f-00046-g24ddad0-dirty #4
+[   37.556480] Call trace:
+[   37.556490] [<ffffffc000208530>] dump_backtrace+0x0/0x278
+[   37.556499] [<ffffffc0002087b8>] show_stack+0x10/0x1c
+[   37.556508] [<ffffffc000ecd288>] dump_stack+0x1c/0x28
+[   37.556516] [<ffffffc00020ffcc>] handle_IPI+0x168/0x2d0
+[   37.556523] [<ffffffc0002007b8>] gic_handle_irq+0x78/0xa0
+[   37.556530] Exception stack(0xffffffc007307a20 to 0xffffffc007307b40)
+[   37.556539] 7a20: 07304000 ffffffc0 00000080 00000000 07307b70 ffffffc0 00228ed8 ffffffc0
+[   37.556547] 7a40: 40000145 00000000 01a12dc0 ffffffc0 00000100 00000000 01d38740 ffffffc0
+[   37.556556] 7a60: 00000001 00000000 be591067 00000008 01a0f9d8 ffffffc0 be29706e 00000008
+[   37.556564] 7a80: 072eab00 ffffffc0 333aa9a6 00000000 b5193519 00000034 00203000 ffffffc0
+[   37.556572] 7aa0: 00000000 00000000 00000000 00000000 04c5d83d 00000000 00000000 00000000
+[   37.556580] 7ac0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   37.556588] 7ae0: 00000000 00000000 07304000 ffffffc0 00000080 00000000 00ee1000 ffffffc0
+[   37.556596] 7b00: 00ee2000 ffffffc0 01a1e000 ffffffc0 01d87370 ffffffc0 00000c1c 00000000
+[   37.556604] 7b20: 0133fe42 ffffffc0 00200040 00000000 00000001 00000000 07307b70 ffffffc0
+[   37.556612] [<ffffffc000203da4>] el1_irq+0x64/0xd4
+[   37.556619] [<ffffffc000229144>] do_softirq+0x40/0x54
+[   37.556626] [<ffffffc000229370>] irq_exit+0x78/0xb0
+[   37.556636] [<ffffffc000256634>] scheduler_ipi+0x160/0x19c
+[   37.556643] [<ffffffc00020ff50>] handle_IPI+0xec/0x2d0
+[   37.556650] [<ffffffc0002007b8>] gic_handle_irq+0x78/0xa0
+[   37.556656] Exception stack(0xffffffc007307ce0 to 0xffffffc007307e00)
+[   37.556665] 7ce0: 07304000 ffffffc0 00000002 00000000 07307e30 ffffffc0 008de26c ffffffc0
+[   37.556673] 7d00: 80000105 00000000 0021099c ffffffc0 002f506e 00000000 000003e8 00000000
+[   37.556681] 7d20: 00000024 00000000 25c17d03 00000002 341555b6 00000000 00000018 00000000
+[   37.556689] 7d40: e731f9f5 002bb5d2 333aa9a6 00000000 b5193519 00000034 00203000 ffffffc0
+[   37.556697] 7d60: 00000000 00000000 00000000 00000000 04c5d83d 00000000 00000000 00000000
+[   37.556705] 7d80: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   37.556713] 7da0: 00000000 00000000 07304000 ffffffc0 00000002 00000000 6ca26818 ffffffc0
+[   37.556720] 7dc0: 00ee0000 ffffffc0 74ed31b0 ffffffc0 00000f75 00000000 00000c1c 00000000
+[   37.556728] 7de0: 01000bc0 ffffffc0 6c6d7c58 ffffffc0 00000001 00000000 07307e30 ffffffc0
+[   37.556736] [<ffffffc000203da4>] el1_irq+0x64/0xd4
+[   37.556746] [<ffffffc0008da8e0>] cpuidle_enter_state+0x40/0xb8
+[   37.556753] [<ffffffc0008daa3c>] cpuidle_idle_call+0xe4/0x13c
+[   37.556761] [<ffffffc000205034>] arch_cpu_idle+0x8/0x20
+[   37.556770] [<ffffffc0002715b4>] cpu_startup_entry+0x1c4/0x234
+[   37.556779] [<ffffffc000ec86ec>] secondary_start_kernel+0x108/0x118
+[   37.556790] CPU1: stopping
+[   37.556805] 
+[   37.556814] CPU: 1 PID: 0 Comm: swapper/1 Tainted: P      D    O 3.10.73-gcd40c8f-00046-g24ddad0-dirty #4
+[   37.556821] task: ffffffc0072e8ac0 ti: ffffffc0072f8000 task.ti: ffffffc0072f8000
+[   37.556835] PC is at lpm_cpuidle_enter+0x494/0x530
+[   37.556842] LR is at lpm_cpuidle_enter+0x480/0x530
+[   37.556848] pc : [<ffffffc0008de26c>] lr : [<ffffffc0008de258>] pstate: 80000105
+[   37.556852] sp : ffffffc0072fbe30
+[   37.556857] x29: ffffffc0072fbe30 x28: 0000000000000001 
+[   37.556866] x27: ffffffc06c6d7a78 x26: ffffffc001000ba8 
+[   37.556874] x25: 00000000000007db x24: 00000000000124f9 
+[   37.556883] x23: ffffffc074ea01b0 x22: ffffffc000ee0000 
+[   37.556891] x21: ffffffc06ca26018 x20: 0000000000000003 
+[   37.556899] x19: ffffffc0072f8000 x18: 0000000000000000 
+[   37.556907] x17: 0000000000000000 x16: 0000000000000000 
+[   37.556915] x15: 0000000000000000 x14: 0000000000000000 
+[   37.556923] x13: 0000000000000000 x12: 0000000004c5d83d 
+[   37.556932] x11: 0000000000000000 x10: 0000000000000000 
+[   37.556941] x9 : ffffffc000203000 x8 : 00000032b5193519 
+[   37.556949] x7 : 00000000333aa9a6 x6 : 002bb5d2e731f9f5 
+[   37.556957] x5 : 0000000000000018 x4 : 00000000341555b6 
+[   37.556967] x3 : 0000000225c17d03 x2 : 0000000000000024 
+[   37.556976] x1 : 00000000000003e8 x0 : 00000000001eb0db 
+[   37.556986] 
+[   37.556986] PC: 0xffffffc0008de16c:
+[   37.556991] e168  8b1c141c52800021 97fec142b9400b80 2a1c03e153001c1c 97fecb3c2a1403e0 f9405800d0003020 340002a1b9400801 11000421b9405261 f9401003b9005261
+[   37.557017] e1a8  f9400460b4000143 f94000642a1403e1 f90043a32a1c03e2 f94043a3d63f0080 b5ffff00f8410c60 51000400b9405260 f9400260b9005260 9417e70736080040
+[   37.557040] e1e8  aa1a03e1aa1503e0 528000232a1403e2 f94252a097fffe0b 8b1b001bb9405661 39403360b90097a1 b94492a035000080 5400008b6b00029f 910253a1d28000a0
+[   37.557063] e228  b9400b6097e6844f 7100041f51000800 97e78db854000048 5280000197ee1171 5280000352800002 97e66c5997e5d343 d2807d01cb190000 b9000af99ac10819
+[   37.557085] e268  f94076d6d50342ff b9400ac0b94006f7 97e70e94340002a0 11000400b9405260 f94012d5b9005260 f94002a3b4000115 f94006a012800001 d63f00602a1703e2
+[   37.557108] e2a8  b5ffff40f8410ea0 51000400b9405260 f9400260b9005260 9417e6cf36080040 f94047a197e70e5a f9404fb32a1403e0 f9400301f9417038 54000040eb01027f
+[   37.557131] e2e8  a94153f397e50a4b a94363f7a9425bf5 a94573fba9446bf9 d65f03c0a8ca7bfd d65f03c052800140 7100103fa9be7bfd 910003fd53001c42 2a0103f3a90153f3
+[   37.557154] e328  d0003bc1540001c8 3873482191246021 8b21886110000063 52800021d61f0020 5280006114000002 14000005b9001001 14000003b900101f 52800013b900101f
+[   37.557177] e368  2a1303e1f9400000 2a0003f497f19075 d0003bc134000120 9124802190005b00 9100402191299000 2a1403e32a1303e2 2a1403e09417b69d a8c27bfda94153f3
+[   37.557200] 
+[   37.557200] LR: 0xffffffc0008de158:
+[   37.557206] e158  2a1403e09417e72a f94252a097fec99c 8b1c141c52800021 97fec142b9400b80 2a1c03e153001c1c 97fecb3c2a1403e0 f9405800d0003020 340002a1b9400801
+[   37.557229] e198  11000421b9405261 f9401003b9005261 f9400460b4000143 f94000642a1403e1 f90043a32a1c03e2 f94043a3d63f0080 b5ffff00f8410c60 51000400b9405260
+[   37.557251] e1d8  f9400260b9005260 9417e70736080040 aa1a03e1aa1503e0 528000232a1403e2 f94252a097fffe0b 8b1b001bb9405661 39403360b90097a1 b94492a035000080
+[   37.557274] e218  5400008b6b00029f 910253a1d28000a0 b9400b6097e6844f 7100041f51000800 97e78db854000048 5280000197ee1171 5280000352800002 97e66c5997e5d343
+[   37.557297] e258  d2807d01cb190000 b9000af99ac10819 f94076d6d50342ff b9400ac0b94006f7 97e70e94340002a0 11000400b9405260 f94012d5b9005260 f94002a3b4000115
+[   37.557320] e298  f94006a012800001 d63f00602a1703e2 b5ffff40f8410ea0 51000400b9405260 f9400260b9005260 9417e6cf36080040 f94047a197e70e5a f9404fb32a1403e0
+[   37.557343] e2d8  f9400301f9417038 54000040eb01027f a94153f397e50a4b a94363f7a9425bf5 a94573fba9446bf9 d65f03c0a8ca7bfd d65f03c052800140 7100103fa9be7bfd
+[   37.557366] e318  910003fd53001c42 2a0103f3a90153f3 d0003bc1540001c8 3873482191246021 8b21886110000063 52800021d61f0020 5280006114000002 14000005b9001001
+[   37.557389] 
+[   37.557389] SP: 0xffffffc0072fbd30:
+[   37.557395] bd30  00000000341555b6 0000000000000018 002bb5d2e731f9f5 00000000333aa9a6 00000032b5193519 ffffffc000203000 0000000000000000 0000000000000000
+[   37.557417] bd70  0000000004c5d83d 0000000000000000 0000000000000000 0000000000000000 0000000000000000 0000000000000000 0000000000000000 ffffffc0072f8000
+[   37.557439] bdb0  0000000000000003 ffffffc06ca26018 ffffffc000ee0000 ffffffc074ea01b0 00000000000124f9 00000000000007db ffffffc001000ba8 ffffffc06c6d7a78
+[   37.557462] bdf0  0000000000000001 ffffffc0072fbe30 ffffffc0008de258 ffffffc0072fbe30 ffffffc0008de26c 0000000080000105 ffffffc074ea01b0 00000000000124f9
+[   37.557484] be30  ffffffc0072fbed0 ffffffc0008da8e4 ffffffc074ea01b0 0000000000000000 00000008bddb3f3f ffffffc000edf000 ffffffc06c68a400 ffffffc001a77799
+[   37.557507] be70  ffffffc00134664b 000000000007d000 ffffffc000ee2000 0000004000000000 0000000000000000 0000000000000017 0000000000000003 0000000000000003
+[   37.557529] beb0  ffffffc06c6d7a78 ffffffc000ee3000 000000016c68a400 bf5d153c03042b1d ffffffc0072fbf10 ffffffc0008daa40 ffffffc074ea01b0 0000000000000000
+[   37.557551] bef0  0000000000000000 000000007348e000 ffffffc06c68a400 0000000000000000 ffffffc0072fbf60 ffffffc000205038 ffffffc0072f8000 ffffffc001a0fa40
+[   37.557574] 
+[   37.557580] CPU: 1 PID: 0 Comm: swapper/1 Tainted: P      D    O 3.10.73-gcd40c8f-00046-g24ddad0-dirty #4
+[   37.557586] Call trace:
+[   37.557597] [<ffffffc000208530>] dump_backtrace+0x0/0x278
+[   37.557605] [<ffffffc0002087b8>] show_stack+0x10/0x1c
+[   37.557614] [<ffffffc000ecd288>] dump_stack+0x1c/0x28
+[   37.557622] [<ffffffc00020ffcc>] handle_IPI+0x168/0x2d0
+[   37.557629] [<ffffffc0002007b8>] gic_handle_irq+0x78/0xa0
+[   37.557634] Exception stack(0xffffffc0072fbce0 to 0xffffffc0072fbe00)
+[   37.557643] bce0: 072f8000 ffffffc0 00000003 00000000 072fbe30 ffffffc0 008de26c ffffffc0
+[   37.557651] bd00: 80000105 00000000 0021099c ffffffc0 001eb0db 00000000 000003e8 00000000
+[   37.557659] bd20: 00000024 00000000 25c17d03 00000002 341555b6 00000000 00000018 00000000
+[   37.557667] bd40: e731f9f5 002bb5d2 333aa9a6 00000000 b5193519 00000032 00203000 ffffffc0
+[   37.557675] bd60: 00000000 00000000 00000000 00000000 04c5d83d 00000000 00000000 00000000
+[   37.557683] bd80: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   37.557691] bda0: 00000000 00000000 072f8000 ffffffc0 00000003 00000000 6ca26018 ffffffc0
+[   37.557699] bdc0: 00ee0000 ffffffc0 74ea01b0 ffffffc0 000124f9 00000000 000007db 00000000
+[   37.557707] bde0: 01000ba8 ffffffc0 6c6d7a78 ffffffc0 00000001 00000000 072fbe30 ffffffc0
+[   37.557714] [<ffffffc000203da4>] el1_irq+0x64/0xd4
+[   37.557721] [<ffffffc0008da8e0>] cpuidle_enter_state+0x40/0xb8
+[   37.557728] [<ffffffc0008daa3c>] cpuidle_idle_call+0xe4/0x13c
+[   37.557735] [<ffffffc000205034>] arch_cpu_idle+0x8/0x20
+[   37.557744] [<ffffffc0002715b4>] cpu_startup_entry+0x1c4/0x234
+[   37.557753] [<ffffffc000ec86ec>] secondary_start_kernel+0x108/0x118
+[   38.761019] scm_call failed: func id 0x82000301, arginfo: 0x1, args: 0x1, 0xffffffc000ba65d8, 0xffffffc030ed7790, 0xffffffc000b8c9f0, ret: -5, syscall returns: 0x0, 0x0, 0x0
+[   38.761032] Rebooting in 5 seconds..
+[   43.761484] Going down for restart now (pid: 4292, comm: AsyncTask #3)
+[   43.762167] qcom,qpnp-power-on qpnp-power-on-12: PMIC@SID2: configuring PON for reset
+[   43.762819] Causing a watchdog bite!
+[   43.763837] Wdog - STS: 0x1, CTL: 0x1, BARK TIME: 0x77fd3, BITE TIME: 0x1

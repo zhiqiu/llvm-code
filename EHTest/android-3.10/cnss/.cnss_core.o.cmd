@@ -1,0 +1,1 @@
+cmd_/home/chenql/code/EHTestDir/EHTest_Release_1.1/android-3.10/cnss/cnss_core.o := aarch64-linux-android-ld -EL    -r -o /home/chenql/code/EHTestDir/EHTest_Release_1.1/android-3.10/cnss/cnss_core.o /home/chenql/code/EHTestDir/EHTest_Release_1.1/android-3.10/cnss/cnss_common.o /home/chenql/code/EHTestDir/EHTest_Release_1.1/android-3.10/cnss/qcomwlan_secif.o 

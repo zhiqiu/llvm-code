@@ -1,0 +1,356 @@
+## Fault-injected function ##
+igb_init_mac_params_82575 in igb_get_invariants_82575
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_get_hw_semaphore in igb_acquire_swfw_sync_82575
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_get_phy_id_82575 in igb_init_phy_params_82575
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_disable_pcie_master in igb_reset_hw_82575
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_set_pcie_completion_timeout in igb_reset_hw_82575
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_get_auto_rd_done in igb_reset_hw_82575
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_id_led_init in igb_init_hw_82575
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_setup_serdes_link_82575 in igb_setup_copper_link_82575
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_check_alt_mac_addr in igb_read_mac_addr_82575
+## Unhandled requiring functions: ##
+kcalloc
+kcalloc
+
+
+
+## Fault-injected function ##
+igb_check_reset_block in igb_setup_link
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_read_pcie_cap_reg in igb_get_bus_info_pcie
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_set_default_fc in igb_setup_link
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_phy_has_link in igb_check_for_copper_link
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_check_reset_block in igb_phy_hw_reset
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_write_phy_reg_mdic in igb_read_phy_reg_igp
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_write_phy_reg_mdic in igb_write_phy_reg_igp
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_phy_has_link in igb_setup_copper_link
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_phy_has_link in igb_get_phy_info_igp
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_phy_setup_autoneg in igb_copper_link_autoneg
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_copper_link_autoneg in igb_setup_copper_link
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+pci_enable_device_mem in igb_probe
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+dma_set_mask_and_coherent in igb_probe
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+pci_request_selected_regions in igb_probe
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+alloc_etherdev_mqs in igb_probe
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+pci_iomap in igb_probe
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+pci_enable_msix_range in igb_set_interrupt_capability
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_alloc_q_vector in igb_alloc_q_vectors
+## Unhandled requiring functions: ##
+kcalloc
+kcalloc
+
+
+
+## Fault-injected function ##
+igb_alloc_q_vectors in igb_init_interrupt_scheme
+## Unhandled requiring functions: ##
+kcalloc
+kcalloc
+
+
+
+## Fault-injected function ##
+igb_enable_sriov in igb_pci_enable_sriov
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_sriov_reinit in igb_pci_enable_sriov
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_init_interrupt_scheme in igb_sw_init
+## Unhandled requiring functions: ##
+kcalloc
+kcalloc
+
+
+
+## Fault-injected function ##
+igb_sw_init in igb_probe
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+pcie_capability_read_word in igb_read_pcie_cap_reg
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_init_i2c in igb_probe
+## Unhandled requiring functions: ##
+kcalloc
+kcalloc
+
+
+
+## Fault-injected function ##
+register_netdev in igb_probe
+## Unhandled requiring functions: ##
+kcalloc
+kcalloc
+
+
+
+## Fault-injected function ##
+dca_add_requester in igb_probe
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+dma_alloc_attrs in igb_setup_tx_resources
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_setup_tx_resources in igb_setup_all_tx_resources
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_setup_all_tx_resources in __igb_open
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+dma_alloc_attrs in igb_setup_rx_resources
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_setup_rx_resources in igb_setup_all_rx_resources
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_setup_all_rx_resources in __igb_open
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+kzalloc in igb_write_mc_addr_list
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+__skb_alloc_page in igb_alloc_mapped_page
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+dma_mapping_error in igb_alloc_mapped_page
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+request_irq in igb_request_msix
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_request_msix in igb_request_irq
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+igb_request_irq in __igb_open
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+netif_set_real_num_tx_queues in __igb_open
+## Unhandled requiring functions: ##
+None
+
+
+
+## Fault-injected function ##
+netif_set_real_num_rx_queues in __igb_open
+## Unhandled requiring functions: ##
+None
+
+
+
