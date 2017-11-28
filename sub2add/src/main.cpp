@@ -30,14 +30,14 @@ namespace {
 
 			return false;
 		}
-		        // a+b === a-(-b)
+		        // a-b === a+(-b)
         bool ob_add(BinaryOperator *bo) {
             BinaryOperator *op = NULL;
              
             if (bo->getOpcode() == Instruction::Add) {
                 // 生成 (－b)
                 op = BinaryOperator::CreateNeg(bo->getOperand(1), "", bo);
-                // 生成 a-(-b)
+                // 生成 a+(-b)
                 op = BinaryOperator::Create(Instruction::Add, bo->getOperand(0), op, "", bo);
                  
                 op->setHasNoSignedWrap(bo->hasNoSignedWrap());
